@@ -1,0 +1,1507 @@
+2022-02-18 09:19:44,069 DEBUG [main] string.StringEx01 (StringEx01.java:9)     - ====================
+2022-02-18 09:19:44,072 DEBUG [main] string.StringEx01 (StringEx01.java:10)     - =log4j=
+2022-02-18 09:19:44,072 DEBUG [main] string.StringEx01 (StringEx01.java:11)     - ====================
+2022-02-18 09:24:58,391 DEBUG [main] string.StringEx01 (StringEx01.java:9)     - ====================
+2022-02-18 09:24:58,392 DEBUG [main] string.StringEx01 (StringEx01.java:10)     - =log4j=
+2022-02-18 09:24:58,392 DEBUG [main] string.StringEx01 (StringEx01.java:11)     - ====================
+2022-02-18 09:25:22,258 DEBUG [main] string.StringEx01 (StringEx01.java:9)     - ====================
+2022-02-18 09:25:22,260 DEBUG [main] string.StringEx01 (StringEx01.java:10)     - =log4j=
+2022-02-18 09:25:22,260 DEBUG [main] string.StringEx01 (StringEx01.java:11)     - ====================
+2022-02-18 09:25:22,260 DEBUG [main] string.StringEx01 (StringEx01.java:16)     - 5
+2022-02-18 09:25:37,823 DEBUG [main] string.StringEx01 (StringEx01.java:16)     - index : 5
+2022-02-18 09:26:32,174 DEBUG [main] string.StringEx01 (StringEx01.java:17)     - index : 5
+2022-02-18 09:27:20,550 DEBUG [main] string.StringEx01 (StringEx01.java:17)     - index : 5
+2022-02-18 09:27:20,552 DEBUG [main] string.StringEx01 (StringEx01.java:20)     - index : 5
+2022-02-18 09:27:33,632 DEBUG [main] string.StringEx01 (StringEx01.java:17)     - index : 3
+2022-02-18 09:27:33,634 DEBUG [main] string.StringEx01 (StringEx01.java:20)     - index : 6
+2022-02-18 09:29:01,724 DEBUG [main] string.StringEx01 (StringEx01.java:20)     - index : 5
+2022-02-18 09:29:01,726 DEBUG [main] string.StringEx01 (StringEx01.java:24)     - Hello
+2022-02-18 09:29:26,212 DEBUG [main] string.StringEx01 (StringEx01.java:20)     - index : 5
+2022-02-18 09:29:26,214 DEBUG [main] string.StringEx01 (StringEx01.java:24)     - .java
+2022-02-18 09:29:39,897 DEBUG [main] string.StringEx01 (StringEx01.java:20)     - index : 5
+2022-02-18 09:29:39,899 DEBUG [main] string.StringEx01 (StringEx01.java:24)     - java
+2022-02-18 09:30:51,576 DEBUG [main] string.StringEx01 (StringEx01.java:20)     - index : 5
+2022-02-18 09:30:51,577 DEBUG [main] string.StringEx01 (StringEx01.java:26)     - ext : java
+2022-02-18 09:32:40,613 DEBUG [main] string.StringEx01 (StringEx01.java:20)     - index : 5
+2022-02-18 09:32:40,615 DEBUG [main] string.StringEx01 (StringEx01.java:26)     - ext : java
+2022-02-18 09:32:40,615 DEBUG [main] string.StringEx01 (StringEx01.java:32)     - filename : Hello
+2022-02-18 09:32:47,329 DEBUG [main] string.StringEx01 (StringEx01.java:20)     - index : 5
+2022-02-18 09:32:47,330 DEBUG [main] string.StringEx01 (StringEx01.java:26)     - ext : java
+2022-02-18 09:32:47,330 DEBUG [main] string.StringEx01 (StringEx01.java:32)     - filename : Hello
+2022-02-18 09:34:52,395 DEBUG [main] string.StringEx01 (StringEx01.java:20)     - index : 5
+2022-02-18 09:34:52,397 DEBUG [main] string.StringEx01 (StringEx01.java:26)     - ext : java
+2022-02-18 09:34:52,397 DEBUG [main] string.StringEx01 (StringEx01.java:32)     - filename : Hello
+2022-02-18 09:34:52,397 DEBUG [main] string.StringEx01 (StringEx01.java:33)     - ===============================
+2022-02-18 09:34:52,397 DEBUG [main] string.StringEx01 (StringEx01.java:37)     - GoodMorning.java
+2022-02-18 09:35:01,773 DEBUG [main] string.StringEx01 (StringEx01.java:20)     - index : 5
+2022-02-18 09:35:01,775 DEBUG [main] string.StringEx01 (StringEx01.java:26)     - ext : java
+2022-02-18 09:35:01,775 DEBUG [main] string.StringEx01 (StringEx01.java:32)     - filename : Hello
+2022-02-18 09:35:01,775 DEBUG [main] string.StringEx01 (StringEx01.java:33)     - =====================
+2022-02-18 09:35:01,775 DEBUG [main] string.StringEx01 (StringEx01.java:37)     - GoodMorning.java
+2022-02-18 09:36:06,505 DEBUG [main] string.StringEx01 (StringEx01.java:20)     - index : 5
+2022-02-18 09:36:06,507 DEBUG [main] string.StringEx01 (StringEx01.java:26)     - ext : java
+2022-02-18 09:36:06,507 DEBUG [main] string.StringEx01 (StringEx01.java:32)     - filename : Hello
+2022-02-18 09:36:06,507 DEBUG [main] string.StringEx01 (StringEx01.java:33)     - =====================
+2022-02-18 09:36:06,507 DEBUG [main] string.StringEx01 (StringEx01.java:37)     - Herro.java
+2022-02-18 10:06:59,749 DEBUG [main] string.StringEncoding (StringEncoding.java:13)     - UTF-8 bArr : [-22, -80, -128]
+2022-02-18 10:08:00,447 DEBUG [main] string.StringEncoding (StringEncoding.java:13)     - UTF-8 bArr : [-22, -80, -128]
+2022-02-18 10:08:00,448 DEBUG [main] string.StringEncoding (StringEncoding.java:15)     - 가
+2022-02-18 10:08:17,043 DEBUG [main] string.StringEncoding (StringEncoding.java:13)     - UTF-8 bArr : [-22, -80, -128]
+2022-02-18 10:08:17,045 DEBUG [main] string.StringEncoding (StringEncoding.java:15)     - UTF-8 : 가
+2022-02-18 10:10:09,184 DEBUG [main] string.StringEncoding (StringEncoding.java:15)     - UTF-8 bArr : [-22, -80, -128]
+2022-02-18 10:10:09,187 DEBUG [main] string.StringEncoding (StringEncoding.java:18)     - UTF-8 : 가
+2022-02-18 10:10:09,187 DEBUG [main] string.StringEncoding (StringEncoding.java:19)     - CP949 : [-80, -95]
+2022-02-18 10:10:56,141 DEBUG [main] string.StringEncoding (StringEncoding.java:15)     - UTF-8 bArr : [-22, -80, -128]
+2022-02-18 10:10:56,143 DEBUG [main] string.StringEncoding (StringEncoding.java:16)     - CP949 bArrMS : [-80, -95]
+2022-02-18 10:10:56,143 DEBUG [main] string.StringEncoding (StringEncoding.java:19)     - UTF-8 : 가
+2022-02-18 10:10:56,143 DEBUG [main] string.StringEncoding (StringEncoding.java:20)     - CP949 : ��
+2022-02-18 10:11:08,629 DEBUG [main] string.StringEncoding (StringEncoding.java:15)     - UTF-8 bArr : [-22, -80, -128]
+2022-02-18 10:11:08,630 DEBUG [main] string.StringEncoding (StringEncoding.java:16)     - CP949 bArrMS : [-80, -95]
+2022-02-18 10:11:08,631 DEBUG [main] string.StringEncoding (StringEncoding.java:19)     - UTF-8 : 가
+2022-02-18 10:11:08,631 DEBUG [main] string.StringEncoding (StringEncoding.java:20)     - CP949 : 가
+2022-02-18 10:29:10,270 DEBUG [main] string.StringValueOfMain (StringValueOfMain.java:10)     - numStr : 100
+2022-02-18 10:29:10,272 DEBUG [main] string.StringValueOfMain (StringValueOfMain.java:12)     - 1001
+2022-02-18 10:29:26,379 DEBUG [main] string.StringValueOfMain (StringValueOfMain.java:10)     - numStr : 100
+2022-02-18 10:29:26,381 DEBUG [main] string.StringValueOfMain (StringValueOfMain.java:12)     - 101
+2022-02-18 10:30:19,869 DEBUG [main] string.StringValueOfMain (StringValueOfMain.java:10)     - numStr : 100
+2022-02-18 10:30:19,871 DEBUG [main] string.StringValueOfMain (StringValueOfMain.java:13)     - 101
+2022-02-18 10:30:19,871 DEBUG [main] string.StringValueOfMain (StringValueOfMain.java:14)     - 101
+2022-02-18 10:30:32,053 DEBUG [main] string.StringValueOfMain (StringValueOfMain.java:10)     - numStr : 100
+2022-02-18 10:30:32,055 DEBUG [main] string.StringValueOfMain (StringValueOfMain.java:13)     - 1001
+2022-02-18 10:30:32,055 DEBUG [main] string.StringValueOfMain (StringValueOfMain.java:14)     - 101
+2022-02-18 10:30:32,055 DEBUG [main] string.StringValueOfMain (StringValueOfMain.java:15)     - 101
+2022-02-18 10:31:06,301 DEBUG [main] string.StringValueOfMain (StringValueOfMain.java:11)     - numStr : 100
+2022-02-18 10:31:06,303 DEBUG [main] string.StringValueOfMain (StringValueOfMain.java:14)     - 1001
+2022-02-18 10:31:06,303 DEBUG [main] string.StringValueOfMain (StringValueOfMain.java:15)     - 101
+2022-02-18 10:31:06,303 DEBUG [main] string.StringValueOfMain (StringValueOfMain.java:16)     - 101
+2022-02-18 10:32:16,354 DEBUG [main] string.StringValueOfMain (StringValueOfMain.java:11)     - numStr : 100
+2022-02-18 10:32:16,358 DEBUG [main] string.StringValueOfMain (StringValueOfMain.java:14)     - 1001
+2022-02-18 10:32:16,358 DEBUG [main] string.StringValueOfMain (StringValueOfMain.java:15)     - 101
+2022-02-18 10:32:16,358 DEBUG [main] string.StringValueOfMain (StringValueOfMain.java:16)     - 101
+2022-02-18 10:32:16,359 DEBUG [main] string.StringValueOfMain (StringValueOfMain.java:20)     - 200.1
+2022-02-18 10:32:47,226 DEBUG [main] string.StringValueOfMain (StringValueOfMain.java:11)     - numStr : 100
+2022-02-18 10:32:47,228 DEBUG [main] string.StringValueOfMain (StringValueOfMain.java:14)     - 1001
+2022-02-18 10:32:47,228 DEBUG [main] string.StringValueOfMain (StringValueOfMain.java:15)     - 101
+2022-02-18 10:32:47,228 DEBUG [main] string.StringValueOfMain (StringValueOfMain.java:16)     - 101
+2022-02-18 10:32:47,229 DEBUG [main] string.StringValueOfMain (StringValueOfMain.java:21)     - 201.1
+2022-02-18 10:32:47,230 DEBUG [main] string.StringValueOfMain (StringValueOfMain.java:22)     - 201.1
+2022-02-18 10:48:58,949 DEBUG [main] wrapper.WrapperEx01Main (WrapperEx01Main.java:14)     - 100
+2022-02-18 10:49:06,931 DEBUG [main] wrapper.WrapperEx01Main (WrapperEx01Main.java:14)     - 100
+2022-02-18 11:08:47,915 DEBUG [main] wrapper.WrapperEx01Main (WrapperEx01Main.java:14)     - myValue : 100
+2022-02-18 11:08:47,917 DEBUG [main] wrapper.WrapperEx01Main (WrapperEx01Main.java:18)     - num01 : 100
+2022-02-18 11:09:32,463 DEBUG [main] wrapper.WrapperEx01Main (WrapperEx01Main.java:14)     - myValue : 100
+2022-02-18 11:09:32,465 DEBUG [main] wrapper.WrapperEx01Main (WrapperEx01Main.java:18)     - num01 : 101
+2022-02-18 11:10:05,454 DEBUG [main] wrapper.WrapperEx01Main (WrapperEx01Main.java:14)     - myValue : 100
+2022-02-18 11:10:05,456 DEBUG [main] wrapper.WrapperEx01Main (WrapperEx01Main.java:15)     - 101
+2022-02-18 11:10:05,456 DEBUG [main] wrapper.WrapperEx01Main (WrapperEx01Main.java:19)     - num01 : 101
+2022-02-18 11:10:41,034 DEBUG [main] wrapper.WrapperEx01Main (WrapperEx01Main.java:14)     - myValue : 100
+2022-02-18 11:10:41,036 DEBUG [main] wrapper.WrapperEx01Main (WrapperEx01Main.java:18)     - num01 : 101
+2022-02-18 11:11:31,520 DEBUG [main] wrapper.WrapperEx01Main (WrapperEx01Main.java:14)     - myValue : 100
+2022-02-18 11:11:31,521 DEBUG [main] wrapper.WrapperEx01Main (WrapperEx01Main.java:18)     - num01 : 101
+2022-02-18 11:13:28,328 DEBUG [main] wrapper.WrapperEx01Main (WrapperEx01Main.java:13)     - myValue : 100
+2022-02-18 11:13:28,329 DEBUG [main] wrapper.WrapperEx01Main (WrapperEx01Main.java:17)     - num01 : 101
+2022-02-18 11:23:39,426 DEBUG [main] wrapper.WrapperEx01Main (WrapperEx01Main.java:13)     - myValue : 100
+2022-02-18 11:23:39,428 DEBUG [main] wrapper.WrapperEx01Main (WrapperEx01Main.java:17)     - num01 : 101
+2022-02-18 11:23:49,449 DEBUG [main] wrapper.WrapperEx01Main (WrapperEx01Main.java:13)     - myValue : 100
+2022-02-18 11:23:49,450 DEBUG [main] wrapper.WrapperEx01Main (WrapperEx01Main.java:17)     - num01 : 101
+2022-02-18 11:24:13,472 DEBUG [main] wrapper.WrapperEx01Main (WrapperEx01Main.java:13)     - myValue : 100
+2022-02-18 11:24:13,473 DEBUG [main] wrapper.WrapperEx01Main (WrapperEx01Main.java:17)     - num01 : 101
+2022-02-18 11:32:52,097 DEBUG [main] string.LoggerManager (StringBuilderMain.java:6)     - ====================
+2022-02-18 11:41:44,378 DEBUG [main] string.LoggerManager (StringBuilderMain.java:6)     - ====================
+2022-02-18 11:41:44,380 DEBUG [main] string.LoggerManager (StringBuilderMain.java:14)     - 200
+2022-02-18 11:41:55,940 DEBUG [main] string.LoggerManager (StringBuilderMain.java:6)     - ====================
+2022-02-18 11:41:55,942 DEBUG [main] string.LoggerManager (StringBuilderMain.java:14)     - 16
+2022-02-18 11:43:10,278 DEBUG [main] string.LoggerManager (StringBuilderMain.java:6)     - ====================
+2022-02-18 11:43:10,279 DEBUG [main] string.LoggerManager (StringBuilderMain.java:14)     - 16
+2022-02-18 11:43:10,279 DEBUG [main] string.LoggerManager (StringBuilderMain.java:18)     - 34
+2022-02-18 11:43:42,347 DEBUG [main] string.LoggerManager (StringBuilderMain.java:6)     - ====================
+2022-02-18 11:43:42,348 DEBUG [main] string.LoggerManager (StringBuilderMain.java:14)     - 16
+2022-02-18 11:43:42,348 DEBUG [main] string.LoggerManager (StringBuilderMain.java:18)     - 34
+2022-02-18 11:43:42,348 DEBUG [main] string.LoggerManager (StringBuilderMain.java:20)     - 01_java02_oracle03_html
+2022-02-18 11:44:35,294 DEBUG [main] string.LoggerManager (StringBuilderMain.java:6)     - ====================
+2022-02-18 11:44:35,295 DEBUG [main] string.LoggerManager (StringBuilderMain.java:14)     - 16
+2022-02-18 11:44:35,296 DEBUG [main] string.LoggerManager (StringBuilderMain.java:18)     - 34
+2022-02-18 11:44:35,296 DEBUG [main] string.LoggerManager (StringBuilderMain.java:20)     - 01_java 
+02_oracle 
+03_html
+2022-02-18 11:44:45,630 DEBUG [main] string.LoggerManager (StringBuilderMain.java:6)     - ====================
+2022-02-18 11:44:45,631 DEBUG [main] string.LoggerManager (StringBuilderMain.java:14)     - 16
+2022-02-18 11:44:45,631 DEBUG [main] string.LoggerManager (StringBuilderMain.java:18)     - 34
+2022-02-18 11:44:45,631 DEBUG [main] string.LoggerManager (StringBuilderMain.java:20)     - 01_java 
+02_oracle 
+03_html 
+
+2022-02-18 11:45:26,896 DEBUG [main] string.LoggerManager (StringBuilderMain.java:6)     - ====================
+2022-02-18 11:45:26,897 DEBUG [main] string.LoggerManager (StringBuilderMain.java:14)     - 16
+2022-02-18 11:45:26,897 DEBUG [main] string.LoggerManager (StringBuilderMain.java:18)     - 34
+2022-02-18 11:45:26,898 DEBUG [main] string.LoggerManager (StringBuilderMain.java:20)     - 01_java 
+02_oracle 
+03_html 
+
+2022-02-18 11:45:41,875 DEBUG [main] string.LoggerManager (StringBuilderMain.java:6)     - ====================
+2022-02-18 11:45:41,876 DEBUG [main] string.LoggerManager (StringBuilderMain.java:14)     - 16
+2022-02-18 11:45:41,877 DEBUG [main] string.LoggerManager (StringBuilderMain.java:18)     - 70
+2022-02-18 11:45:41,877 DEBUG [main] string.LoggerManager (StringBuilderMain.java:20)     - 01_java    
+02_oracle   
+03_html    
+
+2022-02-18 11:47:12,203 DEBUG [main] string.LoggerManager (StringBuilderMain.java:6)     - ====================
+2022-02-18 11:47:12,204 DEBUG [main] string.LoggerManager (StringBuilderMain.java:14)     - 16
+2022-02-18 11:47:12,204 DEBUG [main] string.LoggerManager (StringBuilderMain.java:18)     - 34
+2022-02-18 11:47:12,204 DEBUG [main] string.LoggerManager (StringBuilderMain.java:20)     - 01_java
+02_oracle
+03_html
+
+2022-02-18 14:23:05,558 DEBUG [main] string.LoggerManager (CGVParseMain.java:18)     - -----------------------------------------
+2022-02-18 14:23:05,560 DEBUG [main] string.LoggerManager (CGVParseMain.java:19)     - <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko"> 
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+  <meta http-equiv="Expires" content="-1"> 
+  <meta http-equiv="Pragma" content="no-cache"> 
+  <meta http-equiv="Cache-Control" content="No-Cache"> 
+  <meta http-equiv="imagetoolbar" content="no"> 
+  <meta name="viewport" content="width=1024"> 
+  <meta name="keywords" content="CGV, 시지브이, 영화관, 극장, 영화, 티켓, 박스오피스, 극장, Movie, Theater, Cinema, Cgv, cgv, 예매, 상영작"> 
+  <meta name="description" content="CGV는 선진화된 관람문화와 최고의 서비스로 고객에게 잊을 수 없는 감동을 선사합니다. CGV홈페이지를 통해 영화 예매뿐만 아니라 그 이상의 서비스와 감동을 전달하고, 다양한 즐거움과 특별한 경험을 제공하고자 합니다."> 
+  <meta property="og:site_name" content="영화 그 이상의 감동. CGV"> 
+  <meta id="ctl00_og_title" property="og:title" content="영화 그 이상의 감동. CGV"> 
+  <meta id="ctl00_og_image" property="og:image" content="https://img.cgv.co.kr/WebApp/images/common/logo_new_kakao_prevw.png"> 
+  <link rel="alternate" href="http://m.cgv.co.kr"> 
+  <link rel="shortcut icon" href="https://img.cgv.co.kr/theater_img/favicon.ico" type="image/x-icon"> 
+  <title id="ctl00_headerTitle"></title> 
+  <link rel="shortcut icon" type="image/x-icon" href="https://img.cgv.co.kr/R2014/images/favicon.ico"> 
+  <link rel="stylesheet" media="all" type="text/css" href="https://img.cgv.co.kr/R2014/css/webfont.css"> 
+  <link rel="stylesheet" media="all" type="text/css" href="https://img.cgv.co.kr/R2014/css/reset.css"> 
+  <link rel="stylesheet" media="all" type="text/css" href="https://img.cgv.co.kr/R2014/css/layout.css"> 
+  <link rel="stylesheet" media="all" type="text/css" href="https://img.cgv.co.kr/R2014/css/module.css?20211209"> 
+  <link rel="stylesheet" media="all" type="text/css" href="https://img.cgv.co.kr/R2014/css/content.css"> 
+  <link rel="stylesheet" media="all" type="text/css" href="https://img.cgv.co.kr/R2014/css/common.css"> 
+  <link rel="stylesheet" media="all" type="text/css" href="https://img.cgv.co.kr/R2014/css/eggupdate.css"> 
+  <link rel="stylesheet" media="print" type="text/css" href="https://img.cgv.co.kr/R2014/css/print.css"> 
+  <link rel="stylesheet" type="text/css" href="https://img.cgv.co.kr/R2014/js/jquery.ui/smoothness/jquery-ui-1.10.4.custom.min.css"> 
+  <script type="text/javascript" src="/common/js/extraTheaters.js"></script> 
+  <script type="text/javascript" src="https://img.cgv.co.kr/R2014/js/app.config.js"></script> 
+  <script type="text/javascript" src="https://img.cgv.co.kr/R2014/js/jquery-1.10.2.min.js"></script> 
+  <script type="text/javascript" src="https://img.cgv.co.kr/R2014/js/jquery.plugin/jquery.tmpl.min.js"></script> 
+  <script type="text/javascript" src="https://img.cgv.co.kr/R2014/js/jquery.plugin/jquery.validate.js"></script> 
+  <script type="text/javascript" src="https://img.cgv.co.kr/R2014/js/jquery.plugin/jquery.paging.min.js"></script> 
+  <script type="text/javascript" src="https://img.cgv.co.kr/R2014/js/jquery.ui/jquery-ui-1.10.4.custom.min.js"></script> 
+  <script type="text/javascript" src="https://img.cgv.co.kr/R2014/js/jquery.utils.js"></script> 
+  <script type="text/javascript" src="https://img.cgv.co.kr/R2014/js/app.utils.js"></script> 
+  <script type="text/javascript" src="https://img.cgv.co.kr/R2014/js/jquery.utils.pageing.js"></script> 
+  <script type="text/javascript" src="https://img.cgv.co.kr/R2014/js/app.init.js"></script> <!--[if lte IE 9]><script type="text/javascript" src="https://img.cgv.co.kr/R2014/js/jquery.plugin/jquery.placeholder.js"></script><![endif]--> 
+  <script type="text/javascript" src="https://img.cgv.co.kr/R2014/js/jquery.plugin/jquery.dotdotdot.min.js"></script> 
+  <script type="text/javascript" src="https://img.cgv.co.kr/R2014/js/silverlight_link.js"></script> 
+  <script src="https://img.cgv.co.kr/R2014/js/slick/slick.js" type="text/javascript" charset="utf-8"></script> 
+  <link rel="stylesheet" media="all" type="text/css" href="https://img.cgv.co.kr/R2014/css/phototicket/phototicket.css"> 
+  <link rel="stylesheet" media="all" type="text/css" href="https://img.cgv.co.kr/R2014/css/slick.css"> 
+  <link rel="stylesheet" media="all" type="text/css" href="https://img.cgv.co.kr/R2014/css/slick-theme-custom.css"> 
+  <script type="text/javascript" src="https://img.cgv.co.kr/R2014/js/icheck/login.timer.js"></script> 
+  <script src="https://img.cgv.co.kr/R2014/js/icheck/icheck.min.js" type="text/javascript" charset="utf-8"></script> 
+  <link rel="stylesheet" type="text/css" href="https://img.cgv.co.kr/R2014/js/icheck/iCheck.css"> <!-- 2020.05.07 감정지수/프리에그 프로젝트 추가 --> 
+  <link rel="stylesheet" media="all" type="text/css" href="https://img.cgv.co.kr/R2014/css/preegg.css"> <!-- 각페이지 Header Start--> <!--/각페이지 Header End--> 
+  <script type="text/javascript">
+        //<![CDATA[
+        _TRK_CP = "/홈";
+
+        app.config('staticDomain', 'https://img.cgv.co.kr/R2014/')
+            .config('imageDomain', 'https://img.cgv.co.kr')
+            .config('isLogin', 'False');
+
+        
+        // AD FLOAT
+        // 암호화 할 문자열과 키값(상수값)을 매개변수로 받는다.
+        function EncryptAD(str, key) {
+            output = new String;
+            Temp = new Array();
+            TextSize = str.length;
+            for (i = 0; i < TextSize; i++) {
+                // key 값을 원하는 대로 연산을 한다
+                output += String.fromCharCode(str.charCodeAt(i) + parseInt(key) + 123 + i);
+            }
+            return output;
+        }
+        // 복호화
+        // 암호화 된 문자열과 키값(상수값)을 매개변수로 받는다.
+        function DecryptAD(str, key) {
+            output = new String;
+            Temp = new Array();
+            TextSize = str.length;
+            for (i = 0; i < TextSize; i++) {
+                // 암호화시 사용한 연산과 같아야 한다.
+                output += String.fromCharCode(str.charCodeAt(i) - (parseInt(key) + 123 + i));
+            }
+
+            return output;
+        }
+
+        function getCookieVal(offset) {
+            var endstr = document.cookie.indexOf(";", offset);
+            if (endstr == -1) endstr = document.cookie.length;
+            return unescape(document.cookie.substring(offset, endstr));
+        }
+        function GetCookieAd(name) {
+            var arg = name + "=";
+            var alen = arg.length;
+            var clen = document.cookie.length;
+            var i = 0;
+            while (i < clen) { //while open
+                var j = i + alen;
+                if (document.cookie.substring(i, j) == arg)
+                    return getCookieVal(j);
+                i = document.cookie.indexOf(" ", i) + 1;
+                if (i == 0) break;
+            } //while close
+            return null;
+        }
+        function setCookieAD(name, value, expiredays) {
+            var todayDate = new Date();
+            todayDate.setTime(todayDate.getTime() + (expiredays * 24 * 60 * 60 * 1000));
+            document.cookie = name + "=" + escape(value) + "; expires=" + todayDate.toGMTString() + "; path=/; domain=cgv.co.kr";
+        }
+        function CloseAD() {
+            var AdUrl = window.location.href;
+            var ArrAdUrl = AdUrl.split("/");
+
+            var CurCookieName = 'CgvPopAd-' + ArrAdUrl[3];
+            var CurCookieUrl = GetCookieAd(CurCookieName);
+            var CookieUrl = ArrAdUrl[3];
+
+            CookieUrl = EncryptAD(CookieUrl, "15442280");
+            setCookieAD(CurCookieName, CookieUrl, '1');
+            $(document).find('#ad_float1').hide();
+        }
+        function OpenAD() {
+            var AdUrl = window.location.href;
+            var ArrAdUrl = AdUrl.split("/");
+            var CookieUrl = ArrAdUrl[3];
+            var CurCookieName = 'CgvPopAd-' + ArrAdUrl[3];
+            var CurCookieUrl = GetCookieAd(CurCookieName);
+
+            if (CurCookieUrl == null) {
+                CurCookieUrl = "";
+            }
+            else {
+                CurCookieUrl = DecryptAD(CurCookieUrl, "15442280");
+            }
+
+            if (CurCookieUrl.indexOf(CookieUrl) != -1) {
+                $(document).find('#ad_float1').hide();
+            }
+
+            //section.cgv.co.kr 매거진 체크
+            var magazineckurl = GetCookieAd("CgvPopAd-magazine");
+            if (magazineckurl != null) {
+                var magazineck = DecryptAD(magazineckurl, "15442280");
+                if (magazineck != null && magazineck == "magazine") {
+                    //값이있는경우 표시하지않음
+                    $(document).find('#ad_float1').hide();
+                }
+            }
+        }
+
+        
+
+        //]]>
+    </script> 
+ </head> 
+ <body class=""> 
+  <div class="skipnaiv"> <a href="#contents" id="skipHeader">메인 컨텐츠 바로가기</a> 
+  </div> 
+  <div id="cgvwrap"> 
+   <div class="cgv-ad-wrap" id="cgv_main_ad"> 
+    <div id="TopBarWrapper" class="sect-head-ad"> 
+     <div class="top_extend_ad_wrap"> 
+      <div class="adreduce" id="adReduce"> <iframe src="//ad.cgv.co.kr/NetInsight/html/CGV/CGV_201401/sub@TopBar_EX" width="100%" height="80" title="" frameborder="0" scrolling="no" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" name="TopBanner" id="TopBanner"></iframe> 
+      </div> 
+      <div class="adextend" id="adExtend"></div> 
+     </div><!-- //.top_extend_ad_wrap --> 
+    </div> 
+   </div> <!-- S Header
+        Description
+        - class 'nav' 에 class 'active' 추가시 서브메뉴노출
+        - class 'nav' 에 class 'fixed' 추가시 상단고정되며 스타일 변경됨
+     --> 
+   <div class="header"> <!-- 서비스 메뉴 --> 
+    <div class="header_content"> 
+     <div class="contents"> 
+      <h1 onclick=""><a href="/"><img src="https://img.cgv.co.kr/R2014/images/common/logo/logoRed.png" alt="CGV"></a><span>CULTUREPLEX</span></h1> 
+      <ul class="memberInfo_wrap"> <!-- Advertisement --> 
+       <div class="ad-partner"> <a href="http://www.cgv.co.kr/culture-event/event/detailViewUnited.aspx?seq=31426&amp;menu=006"> <img src="https://img.cgv.co.kr/WingBanner/2022/0110/16417749747880.png" alt="현대M포인트"> </a> 
+       </div> <!-- /Advertisement --> 
+       <li><a href="/user/login/?returnURL=http%3a%2f%2fwww.cgv.co.kr%2fmovies%2fdefault.aspx%3flt%3d1%26ft%3d0"><img src="https://img.cgv.co.kr/R2014/images/common/ico/loginPassword.png" alt="로그인"><span>로그인</span></a></li> 
+       <li><a href="/user/join/"><img src="https://img.cgv.co.kr/R2014/images/common/ico/loginJoin.png" alt="회원가입"><span>회원가입</span></a></li> 
+       <li><a href="/user/mycgv/"><img src="https://img.cgv.co.kr/R2014/images/common/ico/loginMember.png" alt="MY CGV"><span>MY CGV</span></a></li> 
+       <li><a href="/support/default.aspx"><img src="https://img.cgv.co.kr/R2014/images/common/ico/loginCustomer.png" alt="고객센터"><span>고객센터</span></a></li> 
+      </ul> 
+     </div> 
+    </div> 
+    <script>
+    //TopMenu 영역 LOG
+    //빨강 CGV클릭
+    $('.header_content > .contents > h1 > a').on({
+        click: function (e) {
+            gaEventLog('PC_GNB', '홈', '');
+        }
+    });
+    //서비스 메뉴
+    $('.header_content > .contents > ul > li > a').on({
+        click: function (e) {
+            gaEventLog('PC_GNB', '서비스메뉴_'+this.text, '');
+        }
+    });
+
+</script> <!-- 서비스 메뉴 --> <!-- 서브 메뉴 --> 
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $('.nav_menu > li > h2 > a').on({
+            mouseenter: function (e) {
+                var target = e.target;
+                $(target).parents('.nav_menu').find('.nav_overMenu').slideDown(function () {
+                    $('.nav').addClass('active');
+                });
+            },
+            click: function (e) {
+                var target = e.target;
+                if (!$('.nav').hasClass('active')) {
+                    $(this).trigger('mouseenter');
+                } else {
+                    $('.nav').trigger('mouseleave');
+                }
+            }
+        });
+
+        /********************************************************
+        //서브메뉴 구글 GA Analytics 로그 처리 - 2022.01.12 myilsan
+        ********************************************************/
+        //cgv화이트 메뉴클릭
+        $('.nav > .contents > h1 > a').on({
+             click: function (e) {
+                 gaEventLog('PC_GNB', '홈', '');
+            }
+        });
+
+        //주메뉴 클릭
+        $('.nav_menu > li > h2 > a').on({
+            click: function (e) {
+                gaEventLog('PC_GNB', '주메뉴_' + this.text, '');
+            }
+        });
+
+        //주메뉴 하위메뉴 클릭
+        $('.nav_overMenu > dd > h3 > a').on({
+            click: function (e) {
+                var target = e.target;
+                var parText = $(target).parents('.nav_overMenu').find('dt')[0].innerText;
+                gaEventLog('PC_GNB', parText + '_' + this.text, '');
+            }
+        });
+
+        //하위메뉴 최상위 클릭
+        $(".nav_overMenu > dt > h2 > a").on({
+            click: function (e) {
+                gaEventLog('PC_GNB',this.text + '_' + this.text, '');
+            }
+        });
+
+        //------------------end----------------------- [@,.o]>
+
+        $('.nav').on({
+            mouseleave: function (e) {
+                $(this).find('.nav_overMenu').slideUp(200, function () {
+                    $('.nav').removeClass('active');
+                });
+            }
+        });
+
+        $('.totalSearch_wrap input[type=text]').on({
+            focusin: function () {
+                $('.totalSearch_wrap').addClass("active");
+            }
+        });
+
+        $('.btn_totalSearchAutocomplete_close').on({
+            click: function () {
+                $('.totalSearch_wrap').removeClass("active");
+            },
+            focusout: function (e) {
+                //     $('.totalSearch_wrap').removeClass("active");
+
+            }
+        });
+
+        $(this).on({
+            scroll: function (e) {
+                /* S GNB fixed */
+                var headerOffsetT = $('.header').offset().top;
+                var headerOuterH = $('.header').outerHeight(true);
+                var fixedHeaderPosY = headerOffsetT + headerOuterH;
+                var scrollT = $(this).scrollTop();
+                var scrollL = $(this).scrollLeft();
+
+                if (scrollT >= fixedHeaderPosY) {
+                    $('.nav').addClass('fixed');
+                    $('.fixedBtn_wrap').addClass('topBtn');
+                } else {
+                    $('.nav').removeClass('fixed');
+                    $('.fixedBtn_wrap').removeClass('topBtn');
+                }
+
+                /* S > GNB fixed 좌우 스크롤
+                Description
+                - GNB가 fixed 되었을때 좌우 스크롤 되게 처리
+                */
+                if ($('.nav').hasClass('fixed')) {
+                    $('.nav').css({ 'left': -1 * scrollL })
+                } else {
+                    $('.nav').css({ 'left': 0 })
+                }
+                /* E > GNB fixed 좌우 스크롤 */
+                /* S GNB fixed */
+            }
+        });
+
+        $('.btn_gotoTop').on({
+            click: function () {
+                $('html, body').stop().animate({
+                    scrollTop: '0'
+                }, 400);
+            }
+        });
+
+        //통합검색 상단 검색 버튼
+        $('#btn_header_search').on('click', function () {
+
+           
+            if ($('#header_ad_keyword').val() != "")
+                goSearch($('#header_ad_keyword'));      //광고
+            else
+                goSearch($('#header_keyword'));
+
+            
+            return false;
+        });
+
+        //통합검색 검색어 입력창
+        $('#header_keyword').keyup(function (e) {
+            if (e.keyCode == 13) goSearch($('#header_keyword'));
+        });
+
+         //검색 입력창 클릭 시 광고값 reset
+        $('#header_keyword').on('click', function () {
+            $(this).attr('placeholder', '');
+            $('#header_ad_keyword').val('');
+        });
+
+    });
+
+    //통합검색
+    function goSearch($objKeyword) {
+
+        if ($objKeyword.val() == "") {
+            alert("검색어를 입력해 주세요");
+            $objKeyword.focus();
+            return false;
+        }
+
+        //GA 검색로그
+        gaEventLog('PC_GNB', '검색', $objKeyword.val());
+        location = "/search/?query=" + escape($objKeyword.val());
+    }
+
+   
+
+    //상단 키워드 광고 (S)
+    function AdSearchExt(txt, SearchText) {
+        $('#header_keyword').attr('placeholder', txt);
+        $('#header_ad_keyword').val(SearchText);
+    }
+
+    function hdIcoSet(left, sh) { }
+    //상단 키워드 광고 (E)
+
+    //상단광고닫기
+    function hideCgvTopAd() {
+        $(".cgv-ad-wrap").hide();
+        $('#wrap_main_notice').parent('div').css('top', 280);
+    }
+
+    //비즈스프링 클릭로그
+    function setClickLog(title) {
+        // eval("try{trk_clickTrace('EVT', '" + title + "')}catch(_e){}");
+    }
+
+</script> 
+    <div class="nav"> 
+     <div class="contents"> 
+      <h1><a href="/" tabindex="-1"><img src="https://img.cgv.co.kr/R2014/images/common/logo/logoWhite.png" alt="CGV"></a></h1> 
+      <ul class="nav_menu"> 
+       <li> <h2><a href="/movies/?lt=1&amp;ft=0">영화</a></h2> 
+        <dl class="nav_overMenu"> 
+         <dt>
+          <h2><a href="/movies/?lt=1&amp;ft=0" tabindex="-1">영화</a></h2>
+         </dt> 
+         <dd>
+          <h3><a href="/movies/?lt=1&amp;ft=0">무비차트</a></h3>
+         </dd> 
+         <dd>
+          <h3><a href="/arthouse/">아트하우스</a></h3>
+         </dd> 
+         <dd>
+          <h3><a href="/culture-event/event/detailViewUnited.aspx?seq=30717">ICECON</a></h3>
+         </dd> 
+        </dl> </li> 
+       <li> <h2><a href="/theaters/">극장</a></h2> 
+        <dl class="nav_overMenu"> 
+         <dt>
+          <h2><a href="/theaters/" tabindex="-1">극장</a></h2>
+         </dt> 
+         <dd>
+          <h3><a href="/theaters/">CGV 극장</a></h3>
+         </dd> 
+         <dd>
+          <h3><a href="/theaters/special/">특별관</a></h3>
+         </dd> 
+        </dl> </li> 
+       <li> <h2><a href="/ticket/"><strong>예매</strong></a></h2> 
+        <dl class="nav_overMenu"> 
+         <dt>
+          <h2><a href="/ticket/" tabindex="-1">예매</a></h2>
+         </dt> 
+         <dd>
+          <h3><a href="/ticket/">빠른예매</a></h3>
+         </dd> 
+         <dd>
+          <h3><a href="/reserve/show-times/">상영스케줄</a></h3>
+         </dd> 
+         <dd>
+          <h3><a href="/ticket/eng/newdefault.aspx">English Ticketing</a></h3>
+         </dd> 
+         <dd>
+          <h3><a href="/reserve/show-times/eng/">English Schedule</a></h3>
+         </dd> 
+        </dl> </li> 
+       <li> <h2><a href="/culture-event/popcorn-store/">스토어</a></h2> 
+        <dl class="nav_overMenu"> 
+         <dt>
+          <h2><a href="/culture-event/popcorn-store/" tabindex="-1">스토어</a></h2>
+         </dt> 
+         <dd>
+          <h3><a href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=2">영화관람권</a></h3>
+         </dd> 
+         <dd>
+          <h3><a href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=3">기프트카드</a></h3>
+         </dd> 
+         <dd>
+          <h3><a href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=4">콤보</a></h3>
+         </dd> 
+         <dd>
+          <h3><a href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=5">팝콘</a></h3>
+         </dd> 
+         <dd>
+          <h3><a href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=6">음료</a></h3>
+         </dd> 
+         <dd>
+          <h3><a href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=7">스낵</a></h3>
+         </dd> 
+         <dd>
+          <h3><a href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=10">플레이존</a></h3>
+         </dd> 
+         <dd>
+          <h3><a href="https://brand.naver.com/cgv" class="arrowR" target="_blank">씨네샵</a></h3>
+         </dd> 
+        </dl> </li> 
+       <li> <h2 onclick="gaEventLog('PC_GNB','주메뉴_이벤트','')"><a href="/culture-event/event/defaultNew.aspx">이벤트</a></h2> 
+        <dl class="nav_overMenu"> 
+         <dt>
+          <h2><a href="/culture-event/event/defaultNew.aspx?mCode=001" tabindex="-1">이벤트</a></h2>
+         </dt> 
+         <dd>
+          <h3><a href="/culture-event/event/defaultNew.aspx?mCode=001">SPECIAL</a></h3>
+         </dd> 
+         <dd>
+          <h3><a href="/culture-event/event/defaultNew.aspx?mCode=004">영화/예매</a></h3>
+         </dd> 
+         <dd>
+          <h3><a href="/culture-event/event/defaultNew.aspx?mCode=008">멤버십/CLUB</a></h3>
+         </dd> 
+         <dd>
+          <h3><a href="/culture-event/event/defaultNew.aspx?mCode=005">CGV 극장별</a></h3>
+         </dd> 
+         <dd>
+          <h3><a href="/culture-event/event/defaultNew.aspx?mCode=006">제휴할인</a></h3>
+         </dd> 
+         <dd>
+          <h3><a href="/user/mycgv/event/result_list.aspx">당첨자 발표</a></h3>
+         </dd> 
+         <dd>
+          <h3><a href="/culture-event/event/end-list.aspx">종료된 이벤트</a></h3>
+         </dd> 
+        </dl> </li> 
+       <li> <h2 onclick="gaEventLog('PC_GNB','주메뉴_해택','')"><a href="/discount/discountlist.aspx">혜택</a></h2> 
+        <dl class="nav_overMenu"> 
+         <dt>
+          <h2><a href="/discount/discountlist.aspx" tabindex="-1">혜택</a></h2>
+         </dt> 
+         <dd>
+          <h3><a href="/discount/discountlist.aspx">CGV 할인정보</a></h3>
+         </dd> 
+         <dd>
+          <h3><a href="https://www.cgv.co.kr/user/memberShip/ClubService.aspx">CLUB 서비스</a></h3>
+         </dd> 
+         <dd>
+          <h3><a href="/user/vip-lounge/">VIP 라운지</a></h3>
+         </dd> 
+        </dl> </li> 
+      </ul> 
+      <div class="totalSearch_wrap"> <label for="totalSearch"> <input type="text" id="header_keyword" value=""> <input type="hidden" id="header_ad_keyword" name="header_ad_keyword"> </label> <button type="button" class="btn_totalSearch" id="btn_header_search">검색</button> <iframe src="//ad.cgv.co.kr/NetInsight/html/CGV/CGV_201401/main@Search_txt" width="0" height="0" title="" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" allowfullscreen mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe> <!--<div class="totalSearchAutocomplete_wrap">
+                <dl class="totalSearchAutocomplete_list">
+                    <dt>영화</dt>
+                    <dd><a href="#none"><strong>전지</strong>적 작가시점</a></dd>
+                    <dd><a href="#none">내언니 <strong>전지</strong>현과 나</a></dd>
+                    <dd><a href="#none">수호<strong>전지</strong> 영웅본색</a></dd>
+                </dl>
+                <dl class="totalSearchAutocomplete_list">
+                    <dt>인물</dt>
+                    <dd><a href="#none"><strong>전지</strong>현</a></dd>
+                    <dd><a href="#none"><strong>전지</strong>희</a></dd>
+                    <dd><a href="#none">이<strong>전지</strong></a></dd>
+                </dl>
+                <a href="#none" class="btn_totalSearchAutocomplete_close">닫기</a>
+            </div>//--> 
+      </div> 
+     </div> 
+    </div> <!-- 서브 메뉴 --> 
+   </div> <!-- E Header --> <!-- Contaniner --> 
+   <div id="contaniner" class="">
+    <!-- 벽돌 배경이미지 사용 시 class="bg-bricks" 적용 / 배경이미지가 없을 경우 class 삭제  --> <!-- Contents Area --> 
+    <div id="contents" class=""> <!-- Contents Start --> <!-- 실컨텐츠 시작 --> 
+     <div class="wrap-movie-chart"> <!-- Heading Map Multi --> 
+      <div class="tit-heading-wrap"> 
+       <h3>무비차트</h3> 
+       <div class="submenu"> 
+        <ul> 
+         <li class="on"><a href="/movies/" title="선택">무비차트</a></li> 
+         <li><a href="/movies/pre-movies.aspx">상영예정작</a></li> <!--<li><a href="/movies/?lt=3">CGV아트하우스</a></li>//--> 
+        </ul> 
+       </div> 
+      </div> <!-- //Heading Map Multi --> <!-- Sorting --> 
+      <div class="sect-sorting"> 
+       <div class="nowshow"> 
+        <input type="checkbox" id="chk_nowshow"> <label for="chk_nowshow">현재 상영작만 보기</label> 
+       </div> <label for="order_type" class="hidden">정렬</label> <select id="order_type" name="order-type"> <option title="현재 선택됨" selected value="1">예매율순</option> <option value="2">평점순</option> <option value="3">관람객순</option> </select> <button type="button" class="round gray"><span>GO</span></button> 
+      </div> <!-- //Sorting --> 
+      <div class="sect-movie-chart"> 
+       <h4 class="hidden"> 무비차트 - 예매율순 </h4> 
+       <ol> 
+        <li> 
+         <div class="box-image"> <strong class="rank">No.1</strong> <a href="/movies/detail-view/?midx=85624"> <span class="thumb-image"> <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85624/85624_320.jpg" alt="언차티드 포스터" onerror="errorImage(this)"> <span class="ico-grade grade-12">12세 이상</span> </span> </a> <span class="screentype"> <a class="imax" href="#" title="IMAX 상세정보 바로가기" data-regioncode="07">IMAX</a> <a class="forDX" href="#" title="4DX 상세정보 바로가기" data-regioncode="4D14">4DX</a> <a class="screenx" href="#" title="SCREENX 상세정보 바로가기" data-regioncode="SCX">SCREENX</a> </span> 
+         </div> 
+         <div class="box-contents"> <a href="/movies/detail-view/?midx=85624"> <strong class="title">언차티드</strong> </a> 
+          <div class="score"> <strong class="percent">예매율<span>34.4%</span></strong> <!-- 2020.05.07 개봉전 프리에그 노출, 개봉후 골든에그지수 노출변경 (적용 범위1~ 3위)--> 
+           <div class="egg-gage small"> <span class="egg great"></span> <span class="percent">89%</span> 
+           </div> 
+          </div> <span class="txt-info"> <strong> 2022.02.16 <span>개봉</span> </strong> </span> <span class="like"> <a class="link-reservation" href="/ticket/?MOVIE_CD=20028855&amp;MOVIE_CD_GROUP=20028855">예매</a> </span> 
+         </div> </li> 
+        <li> 
+         <div class="box-image"> <strong class="rank">No.2</strong> <a href="/movies/detail-view/?midx=85603"> <span class="thumb-image"> <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85603/85603_320.jpg" alt="극장판 주술회전 0 포스터" onerror="errorImage(this)"> <span class="ico-grade grade-15">15세 이상</span> </span> </a> <span class="screentype"> <a class="imax" href="#" title="IMAX 상세정보 바로가기" data-regioncode="07">IMAX</a> <a class="forDX" href="#" title="4DX 상세정보 바로가기" data-regioncode="4D14">4DX</a> </span> 
+         </div> 
+         <div class="box-contents"> <a href="/movies/detail-view/?midx=85603"> <strong class="title">극장판 주술회전 0</strong> </a> 
+          <div class="score"> <strong class="percent">예매율<span>29.9%</span></strong> <!-- 2020.05.07 개봉전 프리에그 노출, 개봉후 골든에그지수 노출변경 (적용 범위1~ 3위)--> 
+           <div class="egg-gage small"> <span class="egg great"></span> <span class="percent">96%</span> 
+           </div> 
+          </div> <span class="txt-info"> <strong> 2022.02.17 <span>개봉</span> </strong> </span> <span class="like"> <a class="link-reservation" href="/ticket/?MOVIE_CD=20028797&amp;MOVIE_CD_GROUP=20028797">예매</a> </span> 
+         </div> </li> 
+        <li> 
+         <div class="box-image"> <strong class="rank">No.3</strong> <a href="/movies/detail-view/?midx=85632"> <span class="thumb-image"> <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85632/85632_320.jpg" alt="더 배트맨 포스터" onerror="errorImage(this)"> <span class="ico-grade grade-15">15세 이상</span> </span> </a> <span class="screentype"> <a class="imax" href="#" title="IMAX 상세정보 바로가기" data-regioncode="07">IMAX</a> <a class="forDX" href="#" title="4DX 상세정보 바로가기" data-regioncode="4D14">4DX</a> <a class="screenx" href="#" title="SCREENX 상세정보 바로가기" data-regioncode="SCX">SCREENX</a> </span> 
+         </div> 
+         <div class="box-contents"> <a href="/movies/detail-view/?midx=85632"> <strong class="title">더 배트맨</strong> </a> 
+          <div class="score"> <strong class="percent">예매율<span>18.0%</span></strong> <!-- 2020.05.07 개봉전 프리에그 노출, 개봉후 골든에그지수 노출변경 (적용 범위1~ 3위)--> 
+           <div class="egg-gage small"> <span class="sprite_preegg default"></span> <span class="percent">99%</span> 
+           </div> 
+          </div> <span class="txt-info"> <strong> 2022.03.01 <span>개봉</span> <em class="dday">D-11</em> </strong> </span> <span class="like"> <a class="link-reservation" href="/ticket/?MOVIE_CD=20028868&amp;MOVIE_CD_GROUP=20028868">예매</a> </span> 
+         </div> </li> 
+       </ol> 
+       <ol> 
+        <li> 
+         <div class="box-image"> <strong class="rank">No.4</strong> <a href="/movies/detail-view/?midx=85635"> <span class="thumb-image"> <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85635/85635_320.jpg" alt="인민을 위해 복무하라 포스터" onerror="errorImage(this)"> <span class="ico-grade grade-19">청소년 관람불가</span> </span> </a> <span class="screentype"> </span> 
+         </div> 
+         <div class="box-contents"> <a href="/movies/detail-view/?midx=85635"> <strong class="title">인민을 위해 복무하라</strong> </a> 
+          <div class="score"> <strong class="percent">예매율<span>3.2%</span></strong> <!-- 2020.05.07 개봉전 프리에그 노출, 개봉후 골든에그지수 노출변경 (적용 범위4~ 7위)--> 
+           <div class="egg-gage small"> <span class="sprite_preegg default"></span> <span class="percent">96%</span> 
+           </div> 
+          </div> <span class="txt-info"> <strong> 2022.02.23 <span>개봉</span> <em class="dday">D-5</em> </strong> </span> <span class="like"> <a class="link-reservation" href="/ticket/?MOVIE_CD=20028871&amp;MOVIE_CD_GROUP=20028871">예매</a> </span> 
+         </div> </li> 
+        <li> 
+         <div class="box-image"> <strong class="rank">No.5</strong> <a href="/movies/detail-view/?midx=83739"> <span class="thumb-image"> <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000083/83739/83739_320.jpg" alt="나일 강의 죽음 포스터" onerror="errorImage(this)"> <span class="ico-grade grade-12">12세 이상</span> </span> </a> <span class="screentype"> </span> 
+         </div> 
+         <div class="box-contents"> <a href="/movies/detail-view/?midx=83739"> <strong class="title">나일 강의 죽음</strong> </a> 
+          <div class="score"> <strong class="percent">예매율<span>2.3%</span></strong> <!-- 2020.05.07 개봉전 프리에그 노출, 개봉후 골든에그지수 노출변경 (적용 범위4~ 7위)--> 
+           <div class="egg-gage small"> <span class="egg great"></span> <span class="percent">89%</span> 
+           </div> 
+          </div> <span class="txt-info"> <strong> 2022.02.09 <span>개봉</span> </strong> </span> <span class="like"> <a class="link-reservation" href="/ticket/?MOVIE_CD=20024619&amp;MOVIE_CD_GROUP=20024619">예매</a> </span> 
+         </div> </li> 
+        <li> 
+         <div class="box-image"> <strong class="rank">No.6</strong> <a href="/movies/detail-view/?midx=85627"> <span class="thumb-image"> <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85627/85627_320.jpg" alt="리코리쉬 피자 포스터" onerror="errorImage(this)"> <span class="ico-grade grade-15">15세 이상</span> </span> </a> <span class="screentype"> </span> 
+         </div> 
+         <div class="box-contents"> <a href="/movies/detail-view/?midx=85627"> <strong class="title">리코리쉬 피자</strong> </a> 
+          <div class="score"> <strong class="percent">예매율<span>1.9%</span></strong> <!-- 2020.05.07 개봉전 프리에그 노출, 개봉후 골든에그지수 노출변경 (적용 범위4~ 7위)--> 
+           <div class="egg-gage small"> <span class="egg great"></span> <span class="percent">91%</span> 
+           </div> 
+          </div> <span class="txt-info"> <strong> 2022.02.16 <span>개봉</span> </strong> </span> <span class="like"> <a class="link-reservation" href="/ticket/?MOVIE_CD=20028859&amp;MOVIE_CD_GROUP=20028859">예매</a> </span> 
+         </div> </li> 
+        <li> 
+         <div class="box-image"> <strong class="rank">No.7</strong> <a href="/movies/detail-view/?midx=85672"> <span class="thumb-image"> <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85672/85672_320.jpg" alt="라라랜드 포스터" onerror="errorImage(this)"> <span class="ico-grade grade-12">12세 이상</span> </span> </a> <span class="screentype"> </span> 
+         </div> 
+         <div class="box-contents"> <a href="/movies/detail-view/?midx=85672"> <strong class="title">라라랜드</strong> </a> 
+          <div class="score"> <strong class="percent">예매율<span>1.2%</span></strong> <!-- 2020.05.07 개봉전 프리에그 노출, 개봉후 골든에그지수 노출변경 (적용 범위4~ 7위)--> 
+           <div class="egg-gage small"> <span class="egg good"></span> <span class="percent">?</span> 
+           </div> 
+          </div> <span class="txt-info"> <strong> 2022.02.22 <span>재개봉</span> <em class="dday">D-4</em> </strong> </span> <span class="like"> <a class="link-reservation" href="/ticket/?MOVIE_CD=20028987&amp;MOVIE_CD_GROUP=20028987">예매</a> </span> 
+         </div> </li> 
+       </ol> 
+       <div class="chart-ad-bottom" id="chart-ad-bottom"> <iframe src="http://ad.cgv.co.kr/NetInsight/html/CGV/CGV_201401/sub@SponsorBar_980" width="980" height="90" title="" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" name="SponsorBar_980" id="SponsorBar_980"></iframe> 
+       </div> 
+       <ol class="list-more"> 
+        <li> 
+         <div class="box-image"> <strong class="rank">No.8</strong> <a href="/movies/detail-view/?midx=83152"> <span class="thumb-image"> <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000083/83152/83152_320.jpg" alt="나의 촛불 포스터" onerror="errorImage(this)"> <span class="ico-grade grade-all">전체</span> </span> </a> <span class="screentype"> </span> 
+         </div> 
+         <div class="box-contents"> <a href="/movies/detail-view/?midx=83152"> <strong class="title">나의 촛불</strong> </a> 
+          <div class="score"> <strong class="percent">예매율<span>1.2%</span></strong> <!-- 2020.05.07 개봉전 프리에그 노출, 개봉후 골든에그지수 노출변경 (적용 범위4~ 7위)--> 
+           <div class="egg-gage small"> <span class="egg great"></span> <span class="percent">91%</span> 
+           </div> 
+          </div> <span class="txt-info"> <strong> 2022.02.10 <span>개봉</span> </strong> </span> <span class="like"> <a class="link-reservation" href="/ticket/?MOVIE_CD=20022848&amp;MOVIE_CD_GROUP=20022848">예매</a> </span> 
+         </div> </li> 
+        <li> 
+         <div class="box-image"> <strong class="rank">No.9</strong> <a href="/movies/detail-view/?midx=85561"> <span class="thumb-image"> <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85561/85561_320.jpg" alt="해적-도깨비 깃발 포스터" onerror="errorImage(this)"> <span class="ico-grade grade-12">12세 이상</span> </span> </a> <span class="screentype"> </span> 
+         </div> 
+         <div class="box-contents"> <a href="/movies/detail-view/?midx=85561"> <strong class="title">해적-도깨비 깃발</strong> </a> 
+          <div class="score"> <strong class="percent">예매율<span>0.8%</span></strong> <!-- 2020.05.07 개봉전 프리에그 노출, 개봉후 골든에그지수 노출변경 (적용 범위4~ 7위)--> 
+           <div class="egg-gage small"> <span class="egg good"></span> <span class="percent">80%</span> 
+           </div> 
+          </div> <span class="txt-info"> <strong> 2022.01.26 <span>개봉</span> </strong> </span> <span class="like"> <a class="link-reservation" href="/ticket/?MOVIE_CD=20028688&amp;MOVIE_CD_GROUP=20028688">예매</a> </span> 
+         </div> </li> 
+        <li> 
+         <div class="box-image"> <strong class="rank">No.10</strong> <a href="/movies/detail-view/?midx=84949"> <span class="thumb-image"> <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000084/84949/84949_320.jpg" alt="스파이더맨-노 웨이 홈 포스터" onerror="errorImage(this)"> <span class="ico-grade grade-12">12세 이상</span> </span> </a> <span class="screentype"> </span> 
+         </div> 
+         <div class="box-contents"> <a href="/movies/detail-view/?midx=84949"> <strong class="title">스파이더맨-노 웨이 홈</strong> </a> 
+          <div class="score"> <strong class="percent">예매율<span>0.8%</span></strong> <!-- 2020.05.07 개봉전 프리에그 노출, 개봉후 골든에그지수 노출변경 (적용 범위4~ 7위)--> 
+           <div class="egg-gage small"> <span class="egg great"></span> <span class="percent">95%</span> 
+           </div> 
+          </div> <span class="txt-info"> <strong> 2021.12.15 <span>개봉</span> </strong> </span> <span class="like"> <a class="link-reservation" href="/ticket/?MOVIE_CD=20028816&amp;MOVIE_CD_GROUP=20027596">예매</a> </span> 
+         </div> </li> 
+        <li> 
+         <div class="box-image"> <strong class="rank">No.11</strong> <a href="/movies/detail-view/?midx=85680"> <span class="thumb-image"> <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85680/85680_320.jpg" alt="에이핑크 스페셜 무비-혼 포스터" onerror="errorImage(this)"> <span class="ico-grade grade-all">전체</span> </span> </a> <span class="screentype"> </span> 
+         </div> 
+         <div class="box-contents"> <a href="/movies/detail-view/?midx=85680"> <strong class="title">에이핑크 스페셜 무비-혼</strong> </a> 
+          <div class="score"> <strong class="percent">예매율<span>0.8%</span></strong> <!-- 2020.05.07 개봉전 프리에그 노출, 개봉후 골든에그지수 노출변경 (적용 범위4~ 7위)--> 
+           <div class="egg-gage small"> <span class="sprite_preegg default"></span> <span class="percent">?</span> 
+           </div> 
+          </div> <span class="txt-info"> <strong> 2022.02.23 <span>개봉</span> <em class="dday">D-5</em> </strong> </span> <span class="like"> <a class="link-reservation" href="/ticket/?MOVIE_CD=20029015&amp;MOVIE_CD_GROUP=20029013">예매</a> </span> 
+         </div> </li> 
+        <li> 
+         <div class="box-image"> <strong class="rank">No.12</strong> <a href="/movies/detail-view/?midx=85291"> <span class="thumb-image"> <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85291/85291_320.jpg" alt="킹메이커 포스터" onerror="errorImage(this)"> <span class="ico-grade grade-15">15세 이상</span> </span> </a> <span class="screentype"> </span> 
+         </div> 
+         <div class="box-contents"> <a href="/movies/detail-view/?midx=85291"> <strong class="title">킹메이커</strong> </a> 
+          <div class="score"> <strong class="percent">예매율<span>0.8%</span></strong> <!-- 2020.05.07 개봉전 프리에그 노출, 개봉후 골든에그지수 노출변경 (적용 범위4~ 7위)--> 
+           <div class="egg-gage small"> <span class="egg great"></span> <span class="percent">91%</span> 
+           </div> 
+          </div> <span class="txt-info"> <strong> 2022.01.26 <span>개봉</span> </strong> </span> <span class="like"> <a class="link-reservation" href="/ticket/?MOVIE_CD=20028235&amp;MOVIE_CD_GROUP=20028235">예매</a> </span> 
+         </div> </li> 
+        <li> 
+         <div class="box-image"> <strong class="rank">No.13</strong> <a href="/movies/detail-view/?midx=84780"> <span class="thumb-image"> <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000084/84780/84780_320.jpg" alt="씽2게더 포스터" onerror="errorImage(this)"> <span class="ico-grade grade-all">전체</span> </span> </a> <span class="screentype"> </span> 
+         </div> 
+         <div class="box-contents"> <a href="/movies/detail-view/?midx=84780"> <strong class="title">씽2게더</strong> </a> 
+          <div class="score"> <strong class="percent">예매율<span>0.5%</span></strong> <!-- 2020.05.07 개봉전 프리에그 노출, 개봉후 골든에그지수 노출변경 (적용 범위4~ 7위)--> 
+           <div class="egg-gage small"> <span class="egg great"></span> <span class="percent">98%</span> 
+           </div> 
+          </div> <span class="txt-info"> <strong> 2022.01.05 <span>개봉</span> </strong> </span> <span class="like"> <a class="link-reservation" href="/ticket/?MOVIE_CD=20028750&amp;MOVIE_CD_GROUP=20027178">예매</a> </span> 
+         </div> </li> 
+        <li> 
+         <div class="box-image"> <strong class="rank">No.14</strong> <a href="/movies/detail-view/?midx=85581"> <span class="thumb-image"> <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85581/85581_320.jpg" alt="안테벨룸 포스터" onerror="errorImage(this)"> <span class="ico-grade grade-15">15세 이상</span> </span> </a> <span class="screentype"> </span> 
+         </div> 
+         <div class="box-contents"> <a href="/movies/detail-view/?midx=85581"> <strong class="title">안테벨룸</strong> </a> 
+          <div class="score"> <strong class="percent">예매율<span>0.4%</span></strong> <!-- 2020.05.07 개봉전 프리에그 노출, 개봉후 골든에그지수 노출변경 (적용 범위4~ 7위)--> 
+           <div class="egg-gage small"> <span class="sprite_preegg default"></span> <span class="percent">99%</span> 
+           </div> 
+          </div> <span class="txt-info"> <strong> 2022.02.23 <span>개봉</span> <em class="dday">D-5</em> </strong> </span> <span class="like"> <a class="link-reservation" href="/ticket/?MOVIE_CD=20028736&amp;MOVIE_CD_GROUP=20028736">예매</a> </span> 
+         </div> </li> 
+        <li> 
+         <div class="box-image"> <strong class="rank">No.15</strong> <a href="/movies/detail-view/?midx=85595"> <span class="thumb-image"> <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85595/85595_320.jpg" alt="355 포스터" onerror="errorImage(this)"> <span class="ico-grade grade-15">15세 이상</span> </span> </a> <span class="screentype"> </span> 
+         </div> 
+         <div class="box-contents"> <a href="/movies/detail-view/?midx=85595"> <strong class="title">355</strong> </a> 
+          <div class="score"> <strong class="percent">예매율<span>0.4%</span></strong> <!-- 2020.05.07 개봉전 프리에그 노출, 개봉후 골든에그지수 노출변경 (적용 범위4~ 7위)--> 
+           <div class="egg-gage small"> <span class="egg good"></span> <span class="percent">82%</span> 
+           </div> 
+          </div> <span class="txt-info"> <strong> 2022.02.09 <span>개봉</span> </strong> </span> <span class="like"> <a class="link-reservation" href="/ticket/?MOVIE_CD=20028772&amp;MOVIE_CD_GROUP=20028772">예매</a> </span> 
+         </div> </li> 
+        <li> 
+         <div class="box-image"> <strong class="rank">No.16</strong> <a href="/movies/detail-view/?midx=85582"> <span class="thumb-image"> <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85582/85582_320.jpg" alt="피그 포스터" onerror="errorImage(this)"> <span class="ico-grade grade-12">12세 이상</span> </span> </a> <span class="screentype"> <a class="arthouse" href="#" data-regioncode="MovieCollage">아트하우스</a> </span> 
+         </div> 
+         <div class="box-contents"> <a href="/movies/detail-view/?midx=85582"> <strong class="title">피그</strong> </a> 
+          <div class="score"> <strong class="percent">예매율<span>0.4%</span></strong> <!-- 2020.05.07 개봉전 프리에그 노출, 개봉후 골든에그지수 노출변경 (적용 범위4~ 7위)--> 
+           <div class="egg-gage small"> <span class="sprite_preegg default"></span> <span class="percent">99%</span> 
+           </div> 
+          </div> <span class="txt-info"> <strong> 2022.02.23 <span>개봉</span> <em class="dday">D-5</em> </strong> </span> <span class="like"> <a class="link-reservation" href="/ticket/?MOVIE_CD=20028970&amp;MOVIE_CD_GROUP=20028737">예매</a> </span> 
+         </div> </li> 
+        <li> 
+         <div class="box-image"> <strong class="rank">No.17</strong> <a href="/movies/detail-view/?midx=85633"> <span class="thumb-image"> <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85633/85633_320.jpg" alt="굿 보스 포스터" onerror="errorImage(this)"> <span class="ico-grade grade-15">15세 이상</span> </span> </a> <span class="screentype"> <a class="arthouse" href="#" data-regioncode="MovieCollage">아트하우스</a> </span> 
+         </div> 
+         <div class="box-contents"> <a href="/movies/detail-view/?midx=85633"> <strong class="title">굿 보스</strong> </a> 
+          <div class="score"> <strong class="percent">예매율<span>0.4%</span></strong> <!-- 2020.05.07 개봉전 프리에그 노출, 개봉후 골든에그지수 노출변경 (적용 범위4~ 7위)--> 
+           <div class="egg-gage small"> <span class="egg great"></span> <span class="percent">93%</span> 
+           </div> 
+          </div> <span class="txt-info"> <strong> 2022.02.10 <span>개봉</span> </strong> </span> <span class="like"> <a class="link-reservation" href="/ticket/?MOVIE_CD=20028869&amp;MOVIE_CD_GROUP=20028869">예매</a> </span> 
+         </div> </li> 
+        <li> 
+         <div class="box-image"> <strong class="rank">No.18</strong> <a href="/movies/detail-view/?midx=85659"> <span class="thumb-image"> <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85659/85659_320.jpg" alt="매미소리 포스터" onerror="errorImage(this)"> <span class="ico-grade grade-15">15세 이상</span> </span> </a> <span class="screentype"> </span> 
+         </div> 
+         <div class="box-contents"> <a href="/movies/detail-view/?midx=85659"> <strong class="title">매미소리</strong> </a> 
+          <div class="score"> <strong class="percent">예매율<span>0.3%</span></strong> <!-- 2020.05.07 개봉전 프리에그 노출, 개봉후 골든에그지수 노출변경 (적용 범위4~ 7위)--> 
+           <div class="egg-gage small"> <span class="sprite_preegg default"></span> <span class="percent">?</span> 
+           </div> 
+          </div> <span class="txt-info"> <strong> 2022.02.24 <span>개봉</span> <em class="dday">D-6</em> </strong> </span> <span class="like"> <a class="link-reservation" href="/ticket/?MOVIE_CD=20029002&amp;MOVIE_CD_GROUP=20028951">예매</a> </span> 
+         </div> </li> 
+        <li> 
+         <div class="box-image"> <strong class="rank">No.19</strong> <a href="/movies/detail-view/?midx=85644"> <span class="thumb-image"> <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85644/85644_320.jpg" alt="역으로 가는 길을 알려줘 포스터" onerror="errorImage(this)"> <span class="ico-grade grade-all">전체</span> </span> </a> <span class="screentype"> </span> 
+         </div> 
+         <div class="box-contents"> <a href="/movies/detail-view/?midx=85644"> <strong class="title">역으로 가는 길을 알려줘</strong> </a> 
+          <div class="score"> <strong class="percent">예매율<span>0.3%</span></strong> <!-- 2020.05.07 개봉전 프리에그 노출, 개봉후 골든에그지수 노출변경 (적용 범위4~ 7위)--> 
+           <div class="egg-gage small"> <span class="egg good"></span> <span class="percent">?</span> 
+           </div> 
+          </div> <span class="txt-info"> <strong> 2022.02.17 <span>개봉</span> </strong> </span> <span class="like"> <a class="link-reservation" href="/ticket/?MOVIE_CD=20028908&amp;MOVIE_CD_GROUP=20028908">예매</a> </span> 
+         </div> </li> 
+       </ol> <button class="btn-more-fontbold">더보기 <i class="link-more">더보기</i></button> 
+       <div class="chart-ad"> 
+        <div class="box-com"> <iframe src="http://ad.cgv.co.kr/NetInsight/html/CGV/CGV_201401/sub@Movie_Chart" width="160" height="300" frameborder="0" scrolling="no" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" id="Movie_Chart" name="Movie_Chart"></iframe> 
+        </div> 
+        <div class="chart_ad_desc"> 
+         <dl> 
+          <dt> 
+           <img src="http://img.cgv.co.kr/R2014/images/ad/ico_ad1.png" alt="ad"> <span id="ad_txt1"></span> 
+          </dt> 
+          <dd> <span id="ad_txt2"></span> 
+          </dd> 
+         </dl> 
+        </div> 
+       </div> 
+      </div> 
+     </div><!-- .sect-moviechart --> 
+     <script type="text/javascript">
+//<![CDATA[
+    (function ($) {
+        $(function () {
+
+            $('.sect-sorting button').click(function () {
+                var val = $('#order_type').val();
+                if (val) {
+                    location.href = "/movies/?lt=1&ot=" + val;
+                }
+            });
+            //[2015-12-15] 무비 파인더 페이지 인 경우 정렬 버튼 처리. : add_mwpark
+            $("#sect-finder button").click(function(){
+                var val = $('#order_type').val();
+                if (val) {
+                    location.href = "/movies/finder.aspx?lt=1&ot=" + val;
+                }
+            });
+
+
+            $('#chk_nowshow').click(function () {
+                if ($("input:checkbox[id='chk_nowshow']").is(":checked")) {
+                    location.href = "/movies/?lt=1&ft=1";
+                }
+                else{
+                    location.href = "/movies/?lt=1&ft=0";
+                }
+            });
+
+            //[2015-12-15] 무비 파인더 페이지 인 경우 현재 상영작만 보기 체크 박스 처리. : add_mwpark
+            $("#chk_finder_nowshow").on("click" , function(){
+                if ($("input:checkbox[id='chk_nowshow']").is(":checked")) {
+                    location.href = "/movies/finder.aspx?lt=1&ft=1";
+                }else{
+                    location.href = "/movies/finder.aspx?lt=1&ft=0";
+                }
+            });
+
+        });
+
+    })(jQuery);
+//]]>
+</script> 
+     <div class="sect-movie-chart"> 
+      <ol id="movie_more_container" style="display:none" class="list-more"> 
+       <li></li> 
+      </ol> 
+     </div> <!--
+<div class="sect-ad-benner"> 
+    <a href="javascript:tmp_alert_phototicket()" title="새창"><img src="https://img.cgv.co.kr/R2014/images/main/phototicket_978_223.jpg" alt="영화를 영원히 추억하는 방법. CGV 포토티켓" /></a>
+</div>//--> <!-- .sect-ad-benner  --> 
+     <div class="cols-rank" style="display:none"> 
+      <div class="col-rank-trailer"> 
+       <h3>인기 트레일러</h3> 
+       <div class="sect-popular-trailer"> 
+        <ul> 
+        </ul> 
+       </div><!-- .sect-popular-trailer --> 
+      </div><!-- .col-rank-trailer --> 
+     </div> <!--
+  2016-
+- Fried : 0 ~69
+- Good :  70 ~ 84
+- Great : 85 ~ 100  
+//--> 
+     <script id="temp_movie" type="text/x-jquery-tmpl">
+    <li>
+        <div class="box-image" >
+            <a href="/movies/detail-view/?midx=${MovieIdx}">
+                <span class="thumb-image">
+                    <img src="${PosterImage.LargeImage}" alt="${Title}" onerror="errorImage(this)"/>
+                    <span class="ico-grade ${MovieGrade.StyleClassName}">${MovieGrade.GradeText}</span>
+                </span>
+            </a>
+            <span class="screentype">
+                {{each MovieKindList}}
+                <a class="${StyleClassName}" href="#" data-regioncode="${RegionCode}">${KindName}</a>
+                {{/each}}
+            </span>
+        </div>
+                    
+        <div class="box-contents">
+            <a href="/movies/detail-view/?midx=${MovieIdx}">
+                <strong class="title">${Title}</strong>
+            </a>
+
+            <div class="score">
+                <strong class="percent">예매율<span>${TicketRate}%</span></strong>
+                <!--2020.05.07 개봉일 12시 30분전 프리에그, 개봉일 12시 30분후 골든에그지수 노출 기준변경-->
+                <div class="egg-gage small">
+                    <span class="${StarPoint}"></span>
+                    <span class="percent">${EggPoint}</span>
+                </div>
+            </div>
+
+            <span class="txt-info">
+                <strong>
+                    ${OpenDate}
+                    <span>${OpenText}</span>
+                    {{if D_Day > 0}}
+                        <em class="dday">D-${D_Day}</em>
+                    {{/if}}
+                </strong>
+            </span>
+            <span class="like"> 
+                {{if (IsTicketing)}}<a class="link-reservation" href="http://www.cgv.co.kr/ticket/?MOVIE_CD=${CGVCode}&MOVIE_CD_GROUP=${MovieGroupCode}">예매</a>{{/if}}
+            </span>
+        </div>    
+    </li>
+</script> 
+     <script type="text/javascript">
+//<![CDATA[
+
+    (function ($) {
+        $(function () {
+
+            $(".btn-more-fontbold").click(function () {
+                $(this).remove();
+                app.movie().getList({ listType: '1', orderType: '1', filterType: '0' }, setMovieListBuild);
+            });
+
+            function setMovieListBuild(result) {
+
+                $("#movie_more_container").empty();
+                $("#movie_more_container").show();
+
+                for (var i = 0; i < result.List.length; i++) {
+                    var str = result.List[i].JointCount;
+                    result.List[i].JointCount = str.split(",").join("");
+                }
+
+
+                $("#temp_movie").tmpl(result.List).appendTo("#movie_more_container");
+
+                //$('.point').point();        //평점 별 표시
+                $('.btn-like').like();      //wish list동작 처리
+                $('span.screentype a').specialTheater();    //특별관 링크
+            }
+        });
+    })(jQuery);
+//]]>
+</script> <!--/ Contents End --> 
+    </div> <!-- /Contents Area --> 
+   </div> <!-- E Contaniner --> <!-- S Popup --> 
+   <div class="com_pop_wrap"> 
+    <div class="com_pop_fog"></div> 
+   </div> 
+   <div class="pop_wrap"> <!-- S > [팝업] 지원 OS 업데이트 유도--> 
+    <div id="pop_supportOS" class="popup" style="display:none"> 
+     <div class="pop_iexp_wrap" style="position:fixed; left:50%; top:50%; width:600px; margin:-165px 0 0 -300px; z-index:1000;"> 
+      <div class="pi_headline"> 
+       <img src="https://img.cgv.co.kr/images/popup/1606_iexp/pop_iexp_headline2.jpg" alt="CGV 홈페이지는 고객님께서 사용중인 MS Windows XP에서 정상적인 서비스 이용이 어려울 수 있으며, OS업데이트를 권장합니다."> 
+      </div> 
+      <div class="down_app"> 
+       <p><img src="https://img.cgv.co.kr/images/popup/1606_iexp/pop_iexp_downtxt.jpg" alt="OS 업데이트가 어려운 경우 모바일앱을 이용하세요!!!"></p> <a class="btn" href="https://itunes.apple.com/kr/app/id370441190?mt=8" target="_blank"><img src="https://img.cgv.co.kr/images/popup/1606_iexp/btn_down_ios.jpg" alt="Ios down"></a> <a class="btn" href="https://play.google.com/store/apps/details?id=com.cgv.android.movieapp" target="_blank"><img src="https://img.cgv.co.kr/images/popup/1606_iexp/btn_down_android.jpg" alt="Android down"></a> 
+      </div> <a class="btn_close">닫기</a> 
+     </div> 
+    </div> <!-- S > [팝업] 지원 브라우저 다운로드 유도--> 
+    <div id="pop_supportBrower" class="popup" style="display:none"> 
+     <div class="pop_iexp_wrap" style="position:fixed; left:50%; top:50%; width:600px; margin:-265px 0 0 -300px; z-index:1000;"> 
+      <div class="pi_headline"> 
+       <img src="https://img.cgv.co.kr/images/popup/1606_iexp/pop_iexp_headline1.jpg" alt="CGV 홈페이지는 Internet Explorer 9이상에서 최적의 서비스 이용이 가능합니다. IE9 이하 브라우저에서 이용 시 정상적인 서비스 이용이 어려울 수 있으며, 브라우저 업그레이드 하시기를 권장합니다."> 
+      </div> 
+      <ul class="down_browser"> 
+       <li><a href="https://www.microsoft.com/ko-kr/edge" target="_blank"><img src="https://img.cgv.co.kr/images/popup/1606_iexp/btn_down_ie.jpg" alt="Internet Explorer 다운받기"></a></li> 
+       <li><a href="https://www.google.com/chrome/browser/desktop/index.html" target="_blank"><img src="https://img.cgv.co.kr/images/popup/1606_iexp/btn_down_chrome.jpg" alt="Chrome 다운받기"></a></li> 
+      </ul> 
+      <div class="down_app"> 
+       <p><img src="https://img.cgv.co.kr/images/popup/1606_iexp/pop_iexp_downtxt.jpg" alt="OS 업데이트가 어려운 경우 모바일앱을 이용하세요!"></p> <a class="btn" href="https://itunes.apple.com/kr/app/id370441190?mt=8" target="_blank"><img src="https://img.cgv.co.kr/images/popup/1606_iexp/btn_down_ios.jpg" alt="Ios down"></a> <a class="btn" href="https://play.google.com/store/apps/details?id=com.cgv.android.movieapp " target="_blank"><img src="https://img.cgv.co.kr/images/popup/1606_iexp/btn_down_android.jpg" alt="Android down"></a> 
+      </div> <a class="btn_close">닫기</a> 
+     </div> 
+    </div> 
+   </div> <!-- E Popup --> <!-- S 예매하기 및 TOP Fixed 버튼 --> 
+   <div class="fixedBtn_wrap"> <a href="/ticket/" class="btn_fixedTicketing">예매하기</a> <a href="#none" class="btn_gotoTop"><img src="https://img.cgv.co.kr/R2014/images/common/btn/gotoTop.png" alt="최상단으로 이동"></a> 
+   </div> <!-- E 예매하기 및 TOP Fixed 버튼 --> <!-- S Footer --> 
+   <footer> <!-- footer_area (s) --> 
+    <div id="BottomWrapper" class="sect-ad"> <iframe src="https://ad.cgv.co.kr/NetInsight/html/CGV/CGV_201401/sub@Bottom" width="100%" height="240" title="" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" name="Bottom" id="Bottom"></iframe> 
+    </div> 
+    <ul class="policy_list"> 
+     <li><a href="http://corp.cgv.co.kr/company/" target="_blank">회사소개</a></li> 
+     <li><a href="http://corp.cgv.co.kr/company/ir/financial/financial_list.aspx" target="_blank">IR</a></li> 
+     <li><a href="http://corp.cgv.co.kr/company/recruit/step/default.aspx" target="_blank">채용정보</a></li> 
+     <li><a href="http://corp.cgv.co.kr/company/advertize/ad_Default.aspx" target="_blank">광고/제휴/출점문의</a></li> 
+     <li><a href="http://www.cgv.co.kr/rules/service.aspx">이용약관</a></li> 
+     <li><a href="http://www.cgv.co.kr/rules/organized.aspx">편성기준</a></li> 
+     <li><a href="http://www.cgv.co.kr/rules/privacy.aspx"><strong>개인정보처리방침</strong></a></li> 
+     <li><a href="http://www.cgv.co.kr/rules/disclaimer.aspx">법적고지</a></li> 
+     <li><a href="http://www.cgv.co.kr/rules/emreject.aspx">이메일주소무단수집거부</a></li> 
+     <li><a href="http://corp.cgv.co.kr/company/ethicalManagement/ceoMessage.aspx" target="_blank">윤리경영</a></li> 
+     <li><a href="/company/cyberAudit.aspx" class="empha-red">사이버감사실</a></li> 
+    </ul> 
+    <article class="company_info_wrap"> 
+     <section class="company_info"> 
+      <address>(04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)</address> 
+      <dl class="company_info_list"> 
+       <dt>
+        대표이사
+       </dt> 
+       <dd>
+        허민회
+       </dd> 
+       <dt>
+        사업자등록번호
+       </dt> 
+       <dd>
+        104-81-45690
+       </dd> 
+       <dt>
+        통신판매업신고번호
+       </dt> 
+       <dd>
+        2017-서울용산-0662 <a href="#none" onclick="goFtc()" class="btn_goFtc">사업자정보확인</a><a></a>
+       </dd> 
+      </dl> 
+      <dl class="company_info_list"> 
+       <dt>
+        호스팅사업자
+       </dt> 
+       <dd>
+        CJ올리브네트웍스
+       </dd> 
+       <dt>
+        개인정보보호 책임자
+       </dt> 
+       <dd>
+        심준범
+       </dd> 
+       <dt>
+        대표이메일
+       </dt> 
+       <dd>
+        cjcgvmaster@cj.net
+       </dd> 
+       <dt>
+        고객센터
+       </dt> 
+       <dd>
+        1544-1122
+       </dd> 
+      </dl> 
+      <p class="copyright">© CJ CGV. All Rights Reserved</p> 
+     </section> 
+     <section class="familysite_wrap"> <label for="familysite">CJ그룹 계열사 바로가기</label> <select id="familysite"> <option value="" class="familysiteTitle">계열사 바로가기</option> <optgroup label="CJ그룹"> <option value="http://www.cj.net/">CJ주식회사</option> </optgroup><optgroup label="식품 &amp; 식품서비스"> <option value="https://www.cj.co.kr/kr/index">CJ제일제당</option> <option value="https://www.cjfoodville.co.kr/main.asp">CJ푸드빌</option> <option value="http://www.cjfreshway.com/index.jsp">CJ프레시웨이</option> </optgroup><optgroup label="생명공학"> <option value="https://www.cj.co.kr/kr/about/business/bio">CJ제일제당 BIO사업부문</option> <option value="https://www.cj.co.kr/kr/about/business/bio">CJ Feed&amp;Card</option> </optgroup><optgroup label="물류 &amp; 신유통"> <option value="https://www.cjlogistics.com/ko/main">CJ대한통운</option> <option value="http://www.cjenc.co.kr/kr/Default.asp">CJ대한통운 건설부문</option> <option value="https://www.oliveyoung.co.kr/store/company/brandStory.do">CJ올리브영</option> <option value="https://www.cjolivenetworks.co.kr:449/">CJ올리브네트웍스</option> <option value="https://www.cjoshopping.com:9002/index.asp">CJ ENM 커머스부문</option> </optgroup><optgroup label="엔터테인먼트 &amp; 미디어"> <option value="http://www.cjem.net/main/?locale=ko">CJ ENM 엔터테인먼트부문</option> <option value="http://corp.cgv.co.kr/">CJ CGV</option> </optgroup> </select> <a href="#none" class="btn_familysite" onclick="goFamilySite()">GO</a> 
+     </section> 
+    </article> 
+    <script>
+    //footer 영역 LOG
+    $('.policy_list > li > a').on({
+        click: function (e) {
+            gaEventLog('PC_footer', this.text, '');
+        }
+    });
+</script> <!-- footer_area (e) --> 
+    <div class="adFloat" style="display:block"> <iframe src="//ad.cgv.co.kr/NetInsight/html/CGV/CGV_201401/sub@Popicon" width="154" height="182" frameborder="0" scrolling="no" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" allowtransparency="true" id="ad_float1"></iframe> 
+    </div> 
+    <script type="text/javascript">            OpenAD();</script> <!-- //Float Ad --> 
+   </footer> <!-- E Footer --> <!-- Aside Banner :  --> <!--
+	<div id="ctl00_sect_person_right" class="sect-aside-banner" style="padding:0; margin:0; position:fixed; z-index:1;display:none">
+		<div class="aside-content-top">
+			<div class="aside-content-btm">
+				<a href="/theaters/"><img src="https://img.cgv.co.kr/R2014/images/common/btn/btn_person_theater.gif" alt="CGV THEATER" /></a>
+				<a href="/arthouse/"><img src="https://img.cgv.co.kr/R2014/images/common/btn/btn_person_arthouse.gif" alt="CGV arthouse" /></a>
+				<a href="/theaters/special/"><img src="https://img.cgv.co.kr/R2014/images/common/btn/btn_person_special.gif" alt="CGV SPECIAL" /></a>
+
+				<a href="/user/mycgv/reserve/" class="required-login" data-url="/user/mycgv/reserve/"><img src="https://img.cgv.co.kr/R2014/images/common/btn/btn_person_ticket.gif" alt="CGV TICKET INFO" /></a>
+				<a href="/discount/discountlist.aspx"><img src="https://img.cgv.co.kr/R2014/images/common/btn/btn_person_discount.gif" alt="CGV DISCOUNT INFO" /></a>
+			</div>
+		</div>
+		<div class="btn-top">
+            <a href="#" onclick="window.scrollTo(0,0);return false;"><span>최상단으로 이동</span></a>
+		</div>
+	</div>
+    //--> <!-- //Aside Banner --> 
+  </div> 
+  <script type="text/template" id="temp_popup_movie_player">
+<div class="popwrap">
+    <div class="sect-layerplayer">
+        <div class="cols-pop-player">
+            <h1 class="title" id="movie_player_popup_title"></h1>
+            <div class="col-pop-player">
+                <div class="warp-pop-player" style="position: relative;">
+                    <iframe id="ifrm_movie_player_popup" name="ifrm_movie_player_popup" src="about:blank" style="width:800px;height:450px;" frameborder="0" marginheight="0" marginwidth="0" scrolling="no"></iframe>
+					
+					<div class="sect-replay" style="display:none" id="pop_player_relation_wrap">
+						<button class="btn-replay movie_player_inner_popup" type="button" data-gallery-idx="0" id="btn_movie_replay">다시보기</button>
+						<!-- 없어지는 영역 -->
+						<div class="wrap-relationmovie" id="pop_player_relation_item_wrap">
+							<strong class="title">관련영상</strong>
+							<ul id="pop_player_relation_movie">
+                                <li></li>
+                            </ul>
+						</div><!-- .wrap-relationmovie -->
+					</div><!-- .sect-replay -->
+					
+                </div><!-- .warp-pop-player -->
+                <div class="descri-trailer">
+                    <strong class="title">영상설명</strong>
+                    <textarea readonly="readonly" id="movie_player_popup_caption"></textarea>
+                </div>
+            </div><!-- .col-player -->
+            <div class="col-pop-playerinfo">
+                <div id="movie_player_popup_movie_info"></div>
+                <div class="sect-trailer">
+                    <strong class="title">신규영상</strong>
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div><!-- .col-playerinfo -->
+        </div><!-- .cols-player -->
+        <button type="button" class="btn-close">닫기</button>
+    </div>
+</div>
+</script> 
+  <script id="temp_popup_movie_player_movie_info" type="text/x-jquery-tmpl">
+<div class="box-image">
+    <a href="/movies/detail-view/?midx=${MovieIdx}" title="${Title} 상세보기 새창">
+        <span class="thumb-image">
+            <img src="${PosterImage.MiddleImage}" alt="${Title} 포스터" />
+            <span class="ico-grade ${MovieGrade.StyleClassName}">${MovieGrade.GradeText}</span>
+        </span>
+    </a>   
+</div>
+<div class="box-contents">
+    <a href="/movies/detail-view/?midx=${MovieIdx}" title="${Title} 상세보기 새창">
+        <strong class="title">${Title}</strong>
+    </a>
+    <span class="txt-info" style="margin-bottom:2px;">
+        <em class="genre">${GenreText}</em>
+        <span>
+            <i>${OpenDate}</i>
+            <strong>${OpenText}</strong>
+            {{if D_Day > 0}}
+                <em class="dday">D-${D_Day}</em>
+            {{/if}}
+        </span>
+    </span>
+{{if IsTicketing }}
+    <a class="link-reservation" href="/ticket/?MOVIE_CD=${CGVCode}&MOVIE_CD_GROUP=${CGVCode}">예매</a> 
+{{/if}}
+</div>
+</script> 
+  <script id="temp_popup_movie_player_relation_movie_item" type="text/x-jquery-tmpl">
+<li>
+    <div class="box-image">
+        <a href="#" title="${Title} 영상보기" class="movie_player_inner_popup" data-gallery-idx="${GalleryIdx}">
+            <span class="thumb-image">
+                <img src="${ImageUrl}" 
+                alt="${Title}_트레일러" />
+                <span class="ico-play">영상보기</span>
+            </span>
+        </a>
+    </div>
+</li>
+</script> 
+  <script type="text/javascript" src="https://img.cgv.co.kr/R2014//js/system/crypto.js"></script> 
+  <script type="text/javascript">
+    //<![CDATA[
+    function closeBanner(){        
+        $('#cgv_main_ad').remove();     
+        for(var i = 0; i < 2; i++) {
+            window.setTimeout(function(){
+                $(window).resize()                
+            }, 30)
+        }
+    }
+    function showPlayEndEvent() {
+        $('#pop_player_relation_wrap').show();
+        $('#btn_movie_replay').focus();
+    }
+
+    (function ($) {
+        $(function () {
+
+        
+            $('.movie_player_popup').moviePlayer();     //동영상플레이어
+
+            //노원타운
+            $('.special5_pop').on('click', function () {
+                openNowonTown();
+                return false;
+            });           
+            // 검색 auto validate version.
+            $('.btn-go-search').on('click', function () {
+                var $frmSearch = $(this).parent().parent('form');
+                $frmSearch.submit();
+                return false;
+            });
+
+            //메인스킵네비
+            $('#skipHeader').on('click', function(){
+                var $ctn = $('#contents');
+                $ctn.attr({
+                    tabIndex : -1
+                }).focus();				
+                return false;
+            });
+
+            //현재 URL 해당파라미터 교체
+            function updateQueryStringParameter(uri, key, value) {
+                var re = new RegExp("([?|&])" + key + "=.*?(&|#|$)", "i");
+                if (uri.match(re)) {
+                    return uri.replace(re, '$1' + key + "=" + value + '$2');
+                } else {
+                    var hash =  '';
+                    var separator = uri.indexOf('?') !== -1 ? "&" : "?";    
+                    if( uri.indexOf('#') !== -1 ){
+                        hash = uri.replace(/.*#/, '#');
+                        uri = uri.replace(/#.*/, '');
+                    }
+                    return uri + separator + key + "=" + value + hash;
+                }
+            }
+            //모바일버전 가기
+            $('.go-mobile').on('click', function() {
+                location.replace(updateQueryStringParameter(location.href, "IsMobile", "N"));
+                return false;
+            });
+        });
+    })(jQuery);
+	
+    function goFamilySite() {
+        var famulySiteURL = $(familysite).val();
+        if (famulySiteURL != "") {
+            var win = window.open(famulySiteURL, 'winFamilySite')
+            win.focus();
+        }
+    }
+    function goFtc() {
+        var ftcUrl = "http://www.ftc.go.kr/bizCommPop.do?wrkr_no=1048145690";
+        window.open(ftcUrl, "bizCommPop", "width=750, height=700, scrollbars=1;");        
+    }    
+    //]]>
+</script> <!-- 앱다운로드 레이어 팝업 --> 
+  <script type="text/javascript">
+    //appDownInfoPop();
+</script> 
+  <script language="javascript" type="text/javascript">
+
+    //GA 에널리스트 이벤트LOG 함수- 2022.01.12: MYILSAN
+    function gaEventLog(pCategroy, pAction, pLabel) {
+        ga('send', {
+            hitType: 'event', eventCategory: pCategroy, eventAction: pAction, eventLabel: pLabel
+            , hitCallback: function () {
+            }
+            , hitCallbackFail: function () { 
+            }
+        });
+    }
+
+    //201402 SYH GA추가
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-47126437-1', 'cgv.co.kr'); //지주사
+    ga('create', 'UA-47951671-5', 'cgv.co.kr', { 'name': 'cgvTracker' }); //디마팀
+    ga('create', 'UA-47951671-7', 'cgv.co.kr', { 'name': 'rollup' }); //추가
+
+</script> <!-- Google Tag Manager --> 
+  <noscript>
+   <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NNNFR3" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript> 
+  <script>    (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({ 'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NNNFR3');
+</script> <!-- End Google Tag Manager -->  
+ </body>
+</html>
+2022-02-18 14:23:05,574 DEBUG [main] string.LoggerManager (CGVParseMain.java:20)     - -----------------------------------------
+2022-02-18 14:31:55,336 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - <strong class="title">언차티드</strong>
+2022-02-18 14:31:55,339 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - <strong class="title">극장판 주술회전 0</strong>
+2022-02-18 14:31:55,339 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - <strong class="title">더 배트맨</strong>
+2022-02-18 14:31:55,339 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - <strong class="title">인민을 위해 복무하라</strong>
+2022-02-18 14:31:55,339 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - <strong class="title">나일 강의 죽음</strong>
+2022-02-18 14:31:55,339 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - <strong class="title">리코리쉬 피자</strong>
+2022-02-18 14:31:55,339 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - <strong class="title">라라랜드</strong>
+2022-02-18 14:32:20,643 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 언차티드
+2022-02-18 14:32:20,645 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 극장판 주술회전 0
+2022-02-18 14:32:20,645 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 더 배트맨
+2022-02-18 14:32:20,645 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 인민을 위해 복무하라
+2022-02-18 14:32:20,645 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 나일 강의 죽음
+2022-02-18 14:32:20,645 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 리코리쉬 피자
+2022-02-18 14:32:20,645 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 라라랜드
+2022-02-18 14:33:08,517 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 1.언차티드
+2022-02-18 14:33:08,518 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 2.극장판 주술회전 0
+2022-02-18 14:33:08,518 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 3.더 배트맨
+2022-02-18 14:33:08,518 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 4.인민을 위해 복무하라
+2022-02-18 14:33:08,518 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 5.나일 강의 죽음
+2022-02-18 14:33:08,518 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 6.리코리쉬 피자
+2022-02-18 14:33:08,518 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 7.라라랜드
+2022-02-18 14:33:16,879 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 1. 언차티드
+2022-02-18 14:33:16,880 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 2. 극장판 주술회전 0
+2022-02-18 14:33:16,881 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 3. 더 배트맨
+2022-02-18 14:33:16,881 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 4. 인민을 위해 복무하라
+2022-02-18 14:33:16,881 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 5. 나일 강의 죽음
+2022-02-18 14:33:16,881 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 6. 리코리쉬 피자
+2022-02-18 14:33:16,881 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 7. 라라랜드
+2022-02-18 14:34:20,382 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 1. 언차티드
+2022-02-18 14:34:20,383 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 2. 극장판 주술회전 0
+2022-02-18 14:34:20,383 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 3. 더 배트맨
+2022-02-18 14:34:20,383 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 4. 인민을 위해 복무하라
+2022-02-18 14:34:20,383 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 5. 나일 강의 죽음
+2022-02-18 14:34:20,383 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 6. 리코리쉬 피자
+2022-02-18 14:34:20,383 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 7. 라라랜드
+2022-02-18 14:34:20,384 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 8. 나의 촛불
+2022-02-18 14:34:20,385 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 9. 해적-도깨비 깃발
+2022-02-18 14:34:20,385 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 10. 스파이더맨-노 웨이 홈
+2022-02-18 14:34:20,385 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 11. 에이핑크 스페셜 무비-혼
+2022-02-18 14:34:20,385 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 12. 킹메이커
+2022-02-18 14:34:20,385 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 13. 씽2게더
+2022-02-18 14:34:20,385 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 14. 안테벨룸
+2022-02-18 14:34:20,385 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 15. 355
+2022-02-18 14:34:20,385 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 16. 피그
+2022-02-18 14:34:20,386 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 17. 굿 보스
+2022-02-18 14:34:20,386 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 18. 매미소리
+2022-02-18 14:34:20,386 DEBUG [main] string.LoggerManager (CGVParseMain.java:29)     - 19. 역으로 가는 길을 알려줘
+2022-02-18 14:39:50,991 DEBUG [main] string.LoggerManager (CGVParseMain.java:33)     - 1. 언차티드, 예매율 : 34.4%
+2022-02-18 14:39:50,993 DEBUG [main] string.LoggerManager (CGVParseMain.java:33)     - 2. 극장판 주술회전 0, 예매율 : 29.9%
+2022-02-18 14:39:50,993 DEBUG [main] string.LoggerManager (CGVParseMain.java:33)     - 3. 더 배트맨, 예매율 : 18.0%
+2022-02-18 14:39:50,993 DEBUG [main] string.LoggerManager (CGVParseMain.java:33)     - 4. 인민을 위해 복무하라, 예매율 : 3.2%
+2022-02-18 14:39:50,993 DEBUG [main] string.LoggerManager (CGVParseMain.java:33)     - 5. 나일 강의 죽음, 예매율 : 2.3%
+2022-02-18 14:39:50,993 DEBUG [main] string.LoggerManager (CGVParseMain.java:33)     - 6. 리코리쉬 피자, 예매율 : 1.9%
+2022-02-18 14:39:50,993 DEBUG [main] string.LoggerManager (CGVParseMain.java:33)     - 7. 라라랜드, 예매율 : 1.2%
+2022-02-18 14:40:36,892 DEBUG [main] string.LoggerManager (CGVParseMain.java:33)     - 1. 언차티드, 예매율 : 34.4%
+2022-02-18 14:40:36,894 DEBUG [main] string.LoggerManager (CGVParseMain.java:33)     - 2. 극장판 주술회전 0, 예매율 : 29.9%
+2022-02-18 14:40:36,894 DEBUG [main] string.LoggerManager (CGVParseMain.java:33)     - 3. 더 배트맨, 예매율 : 18.0%
+2022-02-18 14:40:36,894 DEBUG [main] string.LoggerManager (CGVParseMain.java:33)     - 4. 인민을 위해 복무하라, 예매율 : 3.2%
+2022-02-18 14:40:36,894 DEBUG [main] string.LoggerManager (CGVParseMain.java:33)     - 5. 나일 강의 죽음, 예매율 : 2.3%
+2022-02-18 14:40:36,894 DEBUG [main] string.LoggerManager (CGVParseMain.java:33)     - 6. 리코리쉬 피자, 예매율 : 1.9%
+2022-02-18 14:40:36,894 DEBUG [main] string.LoggerManager (CGVParseMain.java:33)     - 7. 라라랜드, 예매율 : 1.2%
+2022-02-18 14:44:54,194 DEBUG [main] string.LoggerManager (CGVParseMain.java:37)     - 1. 언차티드, 예매율 : 34.4%, 개봉일 : 2022.02.16 
+2022-02-18 14:44:54,196 DEBUG [main] string.LoggerManager (CGVParseMain.java:37)     - 2. 극장판 주술회전 0, 예매율 : 29.9%, 개봉일 : 2022.02.17 
+2022-02-18 14:44:54,196 DEBUG [main] string.LoggerManager (CGVParseMain.java:37)     - 3. 더 배트맨, 예매율 : 18.0%, 개봉일 : 2022.03.01  D-11
+2022-02-18 14:44:54,196 DEBUG [main] string.LoggerManager (CGVParseMain.java:37)     - 4. 인민을 위해 복무하라, 예매율 : 3.2%, 개봉일 : 2022.02.23  D-5
+2022-02-18 14:44:54,196 DEBUG [main] string.LoggerManager (CGVParseMain.java:37)     - 5. 나일 강의 죽음, 예매율 : 2.3%, 개봉일 : 2022.02.09 
+2022-02-18 14:44:54,196 DEBUG [main] string.LoggerManager (CGVParseMain.java:37)     - 6. 리코리쉬 피자, 예매율 : 1.9%, 개봉일 : 2022.02.16 
+2022-02-18 14:44:54,196 DEBUG [main] string.LoggerManager (CGVParseMain.java:37)     - 7. 라라랜드, 예매율 : 1.2%, 개봉일 : 2022.02.22 재 D-4
+2022-02-18 14:45:33,567 DEBUG [main] string.LoggerManager (CGVParseMain.java:37)     - 1. 언차티드, 예매율 : 34.4%, 개봉일 : 2022.02.16 
+2022-02-18 14:45:33,568 DEBUG [main] string.LoggerManager (CGVParseMain.java:37)     - 2. 극장판 주술회전 0, 예매율 : 29.9%, 개봉일 : 2022.02.17 
+2022-02-18 14:45:33,568 DEBUG [main] string.LoggerManager (CGVParseMain.java:37)     - 3. 더 배트맨, 예매율 : 18.0%, 개봉일 : 2022.03.01  D-11
+2022-02-18 14:45:33,568 DEBUG [main] string.LoggerManager (CGVParseMain.java:37)     - 4. 인민을 위해 복무하라, 예매율 : 3.2%, 개봉일 : 2022.02.23  D-5
+2022-02-18 14:45:33,568 DEBUG [main] string.LoggerManager (CGVParseMain.java:37)     - 5. 나일 강의 죽음, 예매율 : 2.3%, 개봉일 : 2022.02.09 
+2022-02-18 14:45:33,568 DEBUG [main] string.LoggerManager (CGVParseMain.java:37)     - 6. 리코리쉬 피자, 예매율 : 1.9%, 개봉일 : 2022.02.16 
+2022-02-18 14:45:33,569 DEBUG [main] string.LoggerManager (CGVParseMain.java:37)     - 7. 라라랜드, 예매율 : 1.2%, 개봉일 : 2022.02.22 재 D-4
+2022-02-18 14:49:12,583 DEBUG [main] string.LoggerManager (CGVParseMain.java:42)     - 1. 언차티드, 예매율 : 34.4%, 개봉일 : 2022.02.16 , 포스터 : 12세 이상
+2022-02-18 14:49:12,584 DEBUG [main] string.LoggerManager (CGVParseMain.java:42)     - 2. 극장판 주술회전 0, 예매율 : 29.9%, 개봉일 : 2022.02.17 , 포스터 : 15세 이상
+2022-02-18 14:49:12,585 DEBUG [main] string.LoggerManager (CGVParseMain.java:42)     - 3. 더 배트맨, 예매율 : 18.0%, 개봉일 : 2022.03.01  D-11, 포스터 : 15세 이상
+2022-02-18 14:49:12,585 DEBUG [main] string.LoggerManager (CGVParseMain.java:42)     - 4. 인민을 위해 복무하라, 예매율 : 3.2%, 개봉일 : 2022.02.23  D-5, 포스터 : 청소년 관람불가
+2022-02-18 14:49:12,585 DEBUG [main] string.LoggerManager (CGVParseMain.java:42)     - 5. 나일 강의 죽음, 예매율 : 2.3%, 개봉일 : 2022.02.09 , 포스터 : 12세 이상
+2022-02-18 14:49:12,585 DEBUG [main] string.LoggerManager (CGVParseMain.java:42)     - 6. 리코리쉬 피자, 예매율 : 1.9%, 개봉일 : 2022.02.16 , 포스터 : 15세 이상
+2022-02-18 14:49:12,585 DEBUG [main] string.LoggerManager (CGVParseMain.java:42)     - 7. 라라랜드, 예매율 : 1.2%, 개봉일 : 2022.02.22 재 D-4, 포스터 : 12세 이상
+2022-02-18 15:06:32,086 DEBUG [main] string.LoggerManager (CGVParseMain.java:42)     - 1. 언차티드, 예매율 : 34.4%, 개봉일 : 2022.02.16 , 포스터 : 
+2022-02-18 15:06:32,087 DEBUG [main] string.LoggerManager (CGVParseMain.java:42)     - 2. 극장판 주술회전 0, 예매율 : 29.9%, 개봉일 : 2022.02.17 , 포스터 : 
+2022-02-18 15:06:32,087 DEBUG [main] string.LoggerManager (CGVParseMain.java:42)     - 3. 더 배트맨, 예매율 : 18.0%, 개봉일 : 2022.03.01  D-11, 포스터 : 
+2022-02-18 15:06:32,087 DEBUG [main] string.LoggerManager (CGVParseMain.java:42)     - 4. 인민을 위해 복무하라, 예매율 : 3.2%, 개봉일 : 2022.02.23  D-5, 포스터 : 
+2022-02-18 15:06:32,088 DEBUG [main] string.LoggerManager (CGVParseMain.java:42)     - 5. 나일 강의 죽음, 예매율 : 2.3%, 개봉일 : 2022.02.09 , 포스터 : 
+2022-02-18 15:06:32,088 DEBUG [main] string.LoggerManager (CGVParseMain.java:42)     - 6. 리코리쉬 피자, 예매율 : 1.9%, 개봉일 : 2022.02.16 , 포스터 : 
+2022-02-18 15:06:32,088 DEBUG [main] string.LoggerManager (CGVParseMain.java:42)     - 7. 라라랜드, 예매율 : 1.2%, 개봉일 : 2022.02.22 재 D-4, 포스터 : 
+2022-02-18 15:07:24,058 DEBUG [main] string.LoggerManager (CGVParseMain.java:42)     - 1. 언차티드, 예매율 : 34.4%, 개봉일 : 2022.02.16 , 포스터 : https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85624/85624_320.jpg
+2022-02-18 15:07:24,060 DEBUG [main] string.LoggerManager (CGVParseMain.java:42)     - 2. 극장판 주술회전 0, 예매율 : 29.9%, 개봉일 : 2022.02.17 , 포스터 : https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85603/85603_320.jpg
+2022-02-18 15:07:24,060 DEBUG [main] string.LoggerManager (CGVParseMain.java:42)     - 3. 더 배트맨, 예매율 : 18.0%, 개봉일 : 2022.03.01  D-11, 포스터 : https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85632/85632_320.jpg
+2022-02-18 15:07:24,060 DEBUG [main] string.LoggerManager (CGVParseMain.java:42)     - 4. 인민을 위해 복무하라, 예매율 : 3.2%, 개봉일 : 2022.02.23  D-5, 포스터 : https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85635/85635_320.jpg
+2022-02-18 15:07:24,060 DEBUG [main] string.LoggerManager (CGVParseMain.java:42)     - 5. 나일 강의 죽음, 예매율 : 2.3%, 개봉일 : 2022.02.09 , 포스터 : https://img.cgv.co.kr/Movie/Thumbnail/Poster/000083/83739/83739_320.jpg
+2022-02-18 15:07:24,060 DEBUG [main] string.LoggerManager (CGVParseMain.java:42)     - 6. 리코리쉬 피자, 예매율 : 1.9%, 개봉일 : 2022.02.16 , 포스터 : https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85627/85627_320.jpg
+2022-02-18 15:07:24,060 DEBUG [main] string.LoggerManager (CGVParseMain.java:42)     - 7. 라라랜드, 예매율 : 1.2%, 개봉일 : 2022.02.22 재 D-4, 포스터 : https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85672/85672_320.jpg
+2022-02-18 15:33:22,476 DEBUG [main] string.LoggerManager (ExceptionEx01Main.java:14)     - result : 100
+2022-02-18 15:33:22,478 DEBUG [main] string.LoggerManager (ExceptionEx01Main.java:14)     - result : 12
+2022-02-18 15:33:22,478 DEBUG [main] string.LoggerManager (ExceptionEx01Main.java:14)     - result : 11
+2022-02-18 15:33:22,478 DEBUG [main] string.LoggerManager (ExceptionEx01Main.java:14)     - result : 33
+2022-02-18 15:33:22,478 DEBUG [main] string.LoggerManager (ExceptionEx01Main.java:14)     - result : 14
+2022-02-18 15:33:22,478 DEBUG [main] string.LoggerManager (ExceptionEx01Main.java:14)     - result : 14
+2022-02-18 15:33:22,478 DEBUG [main] string.LoggerManager (ExceptionEx01Main.java:14)     - result : 25
+2022-02-18 15:33:22,478 DEBUG [main] string.LoggerManager (ExceptionEx01Main.java:14)     - result : 20
+2022-02-18 15:33:22,481 DEBUG [main] string.LoggerManager (ExceptionEx01Main.java:14)     - result : 100
+2022-02-18 15:33:22,481 DEBUG [main] string.LoggerManager (ExceptionEx01Main.java:14)     - result : 11
+2022-02-18 15:37:33,651 DEBUG [main] string.LoggerManager (ExceptionEx02Main.java:14)     - 1 result : 50
+2022-02-18 15:37:33,652 DEBUG [main] string.LoggerManager (ExceptionEx02Main.java:14)     - 1 result : 33
+2022-02-18 15:37:33,652 DEBUG [main] string.LoggerManager (ExceptionEx02Main.java:14)     - 1 result : 16
+2022-02-18 15:37:33,652 DEBUG [main] string.LoggerManager (ExceptionEx02Main.java:14)     - 1 result : 25
+2022-02-18 15:37:33,652 DEBUG [main] string.LoggerManager (ExceptionEx02Main.java:14)     - 1 result : 33
+2022-02-18 15:37:33,652 DEBUG [main] string.LoggerManager (ExceptionEx02Main.java:14)     - 1 result : 14
+2022-02-18 15:37:33,653 DEBUG [main] string.LoggerManager (ExceptionEx02Main.java:14)     - 1 result : 16
+2022-02-18 15:37:33,653 DEBUG [main] string.LoggerManager (ExceptionEx02Main.java:14)     - 1 result : 50
+2022-02-18 15:37:33,654 DEBUG [main] string.LoggerManager (ExceptionEx02Main.java:14)     - 1 result : 20
+2022-02-18 15:37:33,654 DEBUG [main] string.LoggerManager (ExceptionEx02Main.java:14)     - 1 result : 16
+2022-02-18 15:37:33,654 DEBUG [main] string.LoggerManager (ExceptionEx02Main.java:14)     - 1 result : 12
+2022-02-18 15:37:33,654 DEBUG [main] string.LoggerManager (ExceptionEx02Main.java:14)     - 1 result : 25
+2022-02-18 15:37:33,654 DEBUG [main] string.LoggerManager (ExceptionEx02Main.java:14)     - 1 result : 100
+2022-02-18 15:37:33,654 DEBUG [main] string.LoggerManager (ExceptionEx02Main.java:14)     - 1 result : 12
+2022-02-18 15:37:33,654 DEBUG [main] string.LoggerManager (ExceptionEx02Main.java:14)     - 1 result : 20
+2022-02-18 15:37:33,654 DEBUG [main] string.LoggerManager (ExceptionEx02Main.java:14)     - 1 result : 20
+2022-02-18 15:37:33,655 DEBUG [main] string.LoggerManager (ExceptionEx02Main.java:14)     - 1 result : 50
+2022-02-18 15:37:33,655 DEBUG [main] string.LoggerManager (ExceptionEx02Main.java:14)     - 1 result : 12
+2022-02-18 15:37:33,655 DEBUG [main] string.LoggerManager (ExceptionEx02Main.java:14)     - 1 result : 12
+2022-02-18 15:37:33,655 DEBUG [main] string.LoggerManager (ExceptionEx02Main.java:14)     - 1 result : 50
+2022-02-18 15:37:33,655 DEBUG [main] string.LoggerManager (ExceptionEx02Main.java:14)     - 1 result : 14
+2022-02-18 15:37:33,655 DEBUG [main] string.LoggerManager (ExceptionEx02Main.java:20)     - 3 프로그램 종료!
+2022-02-18 15:37:34,945 DEBUG [main] string.LoggerManager (ExceptionEx02Main.java:17)     - 0 / by zero 발생
+2022-02-18 15:37:34,946 DEBUG [main] string.LoggerManager (ExceptionEx02Main.java:18)     - java.lang.ArithmeticException: / by zero
+2022-02-18 15:37:34,946 DEBUG [main] string.LoggerManager (ExceptionEx02Main.java:20)     - 3 프로그램 종료!
+2022-02-18 15:37:43,618 DEBUG [main] string.LoggerManager (ExceptionEx02Main.java:17)     - 0 / by zero 발생
+2022-02-18 15:37:43,619 DEBUG [main] string.LoggerManager (ExceptionEx02Main.java:18)     - java.lang.ArithmeticException: / by zero
+2022-02-18 15:37:43,619 DEBUG [main] string.LoggerManager (ExceptionEx02Main.java:20)     - 3 프로그램 종료!
+2022-02-18 15:37:46,297 DEBUG [main] string.LoggerManager (ExceptionEx02Main.java:14)     - 1 result : 50
+2022-02-18 15:37:46,299 DEBUG [main] string.LoggerManager (ExceptionEx02Main.java:14)     - 1 result : 12
+2022-02-18 15:37:46,299 DEBUG [main] string.LoggerManager (ExceptionEx02Main.java:14)     - 1 result : 25
+2022-02-18 15:37:46,299 DEBUG [main] string.LoggerManager (ExceptionEx02Main.java:17)     - 0 / by zero 발생
+2022-02-18 15:37:46,299 DEBUG [main] string.LoggerManager (ExceptionEx02Main.java:18)     - java.lang.ArithmeticException: / by zero
+2022-02-18 15:37:46,299 DEBUG [main] string.LoggerManager (ExceptionEx02Main.java:20)     - 3 프로그램 종료!
