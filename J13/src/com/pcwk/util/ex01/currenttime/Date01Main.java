@@ -23,3 +23,6 @@ public class Date01Main implements LoggerManager {
 
 	}
 }
+// 시작시간 : 1645414797243
+// 종료시간 : 1645414797303
+// 경과시간 : 60ms
