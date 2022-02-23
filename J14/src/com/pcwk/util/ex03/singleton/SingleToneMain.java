@@ -9,6 +9,12 @@ public class SingleToneMain {
 		
 		System.out.println("s01 : " + s01);
 		System.out.println("s02 : " + s02);
+		
+		StringBuilder sb = new StringBuilder();
+		sb.append("1A");
+		sb.append("2A");
+		System.out.println(sb.charAt(1));
+		System.out.println(sb.length());
 	}
 }
 
