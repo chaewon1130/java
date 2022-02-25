@@ -6,15 +6,14 @@ public class B_10951 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		boolean op = true;
-		while (op) {
-			int a = sc.nextInt();
-			int b = sc.nextInt();
-			if (a + b == 7) {
-				break;
-			}
-			System.out.println(a + b);
-
+		
+		while(sc.hasNextInt()) {
+			int a, b;
+			a = sc.nextInt();
+			b = sc.nextInt();
+			
+			System.out.println(a+b);
 		}
+		sc.close();
 	}
 }
