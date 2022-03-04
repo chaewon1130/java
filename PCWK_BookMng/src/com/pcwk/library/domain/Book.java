@@ -8,7 +8,7 @@ import com.pcwk.cmn.DTO;
  * &#64;author ITSC
  * </pre>
  */
-public class Book extends DTO{
+public class Book extends DTO {
 	private String isbn; // 도서번호
 	private String title; // 제목
 	private String author; // 지은이
@@ -40,6 +40,7 @@ public class Book extends DTO{
 
 	/**
 	 * ISBN getter
+	 * 
 	 * @return
 	 */
 	public String getIsbn() {
@@ -48,6 +49,7 @@ public class Book extends DTO{
 
 	/**
 	 * ISBN setter
+	 * 
 	 * @param isbn
 	 */
 	public void setIsbn(String isbn) {
@@ -84,6 +86,12 @@ public class Book extends DTO{
 
 	public void setAvailable(boolean available) {
 		this.available = available;
+	}
+
+	@Override
+	public String toString() {
+		return "Book [isbn=" + isbn + ", title=" + title + ", author=" + author + ", genre=" + genre + ", available="
+				+ available + "]";
 	}
 
 }

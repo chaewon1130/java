@@ -29,11 +29,11 @@ public class NaverSearchEx01 {
 			// 블로그 JSON
 //			String apiURL = "https://openapi.naver.com/v1/search/blog?query=" + text;
 			// 책 JSON
-//			String apiURL = "https://openapi.naver.com/v1/search/book.json?query=" + text;
+			String apiURL = "https://openapi.naver.com/v1/search/book.json?query=" + text;
 			// 책 XML
 //			String apiURL = "https://openapi.naver.com/v1/search/book.xml?query=" + text;
 			// 뉴스
-			String apiURL = "https://openapi.naver.com/v1/search/news.json?query=" + text;
+//			String apiURL = "https://openapi.naver.com/v1/search/news.json?query=" + text;
 			System.out.println("apiURL : " + apiURL);
 
 			URL url = new URL(apiURL); // URL
