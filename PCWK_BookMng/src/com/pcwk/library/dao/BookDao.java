@@ -6,6 +6,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import com.pcwk.cmn.DTO;
@@ -89,19 +90,56 @@ public class BookDao implements WorkDiv<Book>, LoggerManager {
 		return null;
 	}
 
+	// Book이 존재하는지 확인
+	// return 1(존재) / 0(없음)
+	public int isBookExists(Book dto) {
+		int flag = 0;
+		for (Book book : bookList) {
+			if (book.getIsbn().equals(dto.getIsbn())) {
+				flag = 1;
+				break;
+			}
+		}
+		return flag;
+	}
+
 	@Override
 	public int doSave(Book dto) {
-		return 0;
+		if (isBookExists(dto) == 1) {
+			System.out.println("도서 번호가 존재 합니다.\n중복도서 번호 : " + dto.getIsbn());
+			return -1;
+		}
+		boolean flag = bookList.add(dto);
+		return (flag == true) ? 1 : 0;
 	}
 
 	@Override
 	public int doDelete(Book dto) {
-		return 0;
+		// 삭제 하기
+		int flag = 0;
+		for(int i = bookList.size()-1; i>=0; i--) {
+			Book book = bookList.get(i);
+			// 도서번호로 비교
+			if(book.getIsbn().equals(dto.getIsbn())) {
+				bookList.remove(i);
+				flag = 1;
+				break;
+			}
+		}
+		return flag;
 	}
 
 	@Override
 	public Book doSelectOne(Book dto) {
-		return null;
+		Book outData = null;
+		
+		for(Book book : bookList) {
+			if(book.getIsbn().equals(dto.getIsbn())) {
+				outData = book;
+				break;
+			}
+		}
+		return outData;
 	}
 
 	@Override

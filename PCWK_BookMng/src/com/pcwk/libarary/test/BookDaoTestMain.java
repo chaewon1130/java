@@ -1,5 +1,9 @@
 package com.pcwk.libarary.test;
 
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
+
 import com.pcwk.library.dao.BookDao;
 import com.pcwk.library.domain.Book;
 
@@ -18,7 +22,6 @@ public class BookDaoTestMain {
 				"IT_999", true);
 		book03 = new Book("1163032212-9791163032212-99999", "Do it! HTML+CSS+<b>자바</b>스크립트 웹 표준의 정석_99999", "고경희_99999",
 				"IT_99999", true);
-
 	}
 
 	public void saveFile() {
@@ -34,7 +37,97 @@ public class BookDaoTestMain {
 
 	public static void main(String[] args) {
 		BookDaoTestMain bookMain = new BookDaoTestMain();
-		bookMain.readFile(); // 파일에서 읽기
-		bookMain.saveFile(); // 파일로 쓰기
+//		bookMain.readFile(); // 파일에서 읽기
+//		bookMain.saveFile(); // 파일로 쓰기
+
+		// books.csv 존재여부 체크
+		File books = new File(BookDao.SAVE_FILE_PATH);
+
+		// 파일이 존재하지 않고, 파일이 아니면
+		if (!books.exists() || !books.isFile()) {
+			try {
+				books.createNewFile();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+
+		// CRUDQ
+		// C(등록), R(조회), U(수정), D(삭제), Q(종료)
+
+		// ==========================================================
+		// Keyboard Input 처리
+		// ==========================================================
+		Scanner scanner = new Scanner(System.in);
+		String inCommand = ""; // 명령어 입력
+		do {
+			System.out.print("C(등록), R(조회), U(수정), D(삭제), Q(종료)>>");
+			inCommand = scanner.nextLine();
+			inCommand = inCommand.trim(); // 앞뒤 공백제거
+
+			Book book = null;
+			String[] dataArr = null;
+			String readInput = "";
+			switch (inCommand.toUpperCase()) {
+			case "R": // 단건 조회
+				// 화면에서 도서번호를 입력을 받는다.
+				// 북 객체를 만든다
+				System.out.println("조회 도서번호 : 8994492046-9788994492049>>");
+				readInput = scanner.nextLine().trim();
+				book = new Book();
+				book.setIsbn(readInput);
+				
+				Book outData = bookMain.dao.doSelectOne(book);
+				if(outData == null) {
+					System.out.println("조회 실패!");
+				}else {
+					System.out.println("조회 성공!");
+					System.out.println("조회 데이터 : " + outData);
+				}
+				break;
+			case "D": // 삭제
+				System.out.println("삭제 도서번호 : 8994492046-9788994492049>>");
+				readInput = scanner.nextLine().trim(); // 입력데이터 받기
+				book = new Book();
+				book.setIsbn(readInput); // 삭제 도서번호
+				
+				int status = bookMain.dao.doDelete(book);
+				if(status == 1) {
+					System.out.println("삭제 되었습니다.");
+				}else {
+					System.out.println("삭제 실패!");
+				}
+				break;
+			case "C": // 등록
+				System.out.println("입력 : 8994492046-9788994492049,Java의 정석 기초편,남궁성,IT,1>>");
+				readInput = scanner.nextLine().trim();
+
+				dataArr = readInput.split(",");
+
+				boolean available = false;
+				available = dataArr[4].equals("1") ? true : false;
+				book = new Book(dataArr[0], dataArr[1], dataArr[2], dataArr[3], available);
+
+				int statusC = bookMain.dao.doSave(book);
+				if (statusC == 1) { // 정상 등록
+					System.out.println(book.toString() + " 입력 되었습니다.");
+				}else{ 
+					System.out.println("등록 실패!");
+				}
+				break;
+			case "Q": // 종료 : 메모리 to file
+				int flag = bookMain.dao.saveFile(BookDao.SAVE_FILE_PATH);
+				System.out.println("저장건수 : " + flag);
+				break;
+			default:
+				System.out.println("C(등록), R(조회), U(수정), D(삭제), Q(종료)\n명령어를 확인 하세요.");
+				break;
+			}
+		} while (!inCommand.equalsIgnoreCase("Q"));
+
+		System.out.println("===================================");
+		System.out.println("= 프로그램 종료! =");
+		System.out.println("===================================");
+
 	}
 }
