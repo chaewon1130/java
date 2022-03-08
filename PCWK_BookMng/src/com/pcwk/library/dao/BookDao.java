@@ -87,7 +87,8 @@ public class BookDao implements WorkDiv<Book>, LoggerManager {
 
 	@Override
 	public List<Book> doRetrieve(DTO dto) {
-		return null;
+		
+		return bookList;
 	}
 
 	// Book이 존재하는지 확인
@@ -144,7 +145,12 @@ public class BookDao implements WorkDiv<Book>, LoggerManager {
 
 	@Override
 	public int doUpdate(Book dto) {
-		return 0;
+		int flag = 0;
+		// 1. 수정 데이터가 있는지 확인
+		// 2. 기존 데이터 삭제
+		// 3. 수정 데이터 등록
+		flag += doDelete(dto);
+		flag += doSave(dto);
+		return flag;
 	}
-
 }

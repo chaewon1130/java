@@ -2,6 +2,7 @@ package com.pcwk.libarary.test;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 import java.util.Scanner;
 
 import com.pcwk.library.dao.BookDao;
@@ -34,6 +35,21 @@ public class BookDaoTestMain {
 			System.out.println(b);
 		}
 	}
+	
+	// Scanner 통한 데이터 입력
+	public Book getInputData(Scanner scanner) {
+		Book book = null;
+		
+		String readInput = scanner.nextLine().trim();
+
+		String[] dataArr = readInput.split(",");
+
+		boolean available = false;
+		available = dataArr[4].equals("1") ? true : false;
+		book = new Book(dataArr[0], dataArr[1], dataArr[2], dataArr[3], available);
+		
+		return book;
+	}
 
 	public static void main(String[] args) {
 		BookDaoTestMain bookMain = new BookDaoTestMain();
@@ -61,7 +77,7 @@ public class BookDaoTestMain {
 		Scanner scanner = new Scanner(System.in);
 		String inCommand = ""; // 명령어 입력
 		do {
-			System.out.print("C(등록), R(조회), U(수정), D(삭제), Q(종료)>>");
+			System.out.print("C(등록), R(조회), U(수정), D(삭제), Q(종료), RE(전체조회)>>");
 			inCommand = scanner.nextLine();
 			inCommand = inCommand.trim(); // 앞뒤 공백제거
 
@@ -69,6 +85,37 @@ public class BookDaoTestMain {
 			String[] dataArr = null;
 			String readInput = "";
 			switch (inCommand.toUpperCase()) {
+			case "RE": // 전체 조회
+				System.out.println("=================================");
+				System.out.println("도서번호\t\t제목\t\t지은이\t\t장르\t\t대출가능 여부");
+				System.out.println("=================================");
+				List<Book> list = bookMain.dao.doRetrieve(book);
+				for(Book b : list) {
+					System.out.println(b.getIsbn() + ", " + b.getTitle() + ", " + b.getAuthor() + ", " + b.getGenre() + ", " + b.isAvailable());
+				}
+				break;
+			case "U":
+				System.out.println("수정 : 8994492046-9788994492049,Java의 정석 기초편,남궁성,IT,1>>");
+				book = bookMain.getInputData(scanner);
+				
+				// ArrayList 수정
+				// 1. 수정 데이터가 있는지 확인
+				// 2. 기존 데이터 삭제
+				// 3. 수정 데이터 등록
+				
+				if(bookMain.dao.isBookExists(book) != 1) {// 기존데이터가 있는가
+					System.out.println("데이터가 존재 하지 않습니다.\n데이터를 확인해 주세요.");
+					continue;
+				}
+				int uStatus = bookMain.dao.doUpdate(book);
+				if(uStatus == 2) {
+					System.out.println("수정 성공!");
+				}else {
+					System.out.println("수정 실패!");
+				}
+//				System.out.println("U : input : " + book);
+				break;
+				
 			case "R": // 단건 조회
 				// 화면에서 도서번호를 입력을 받는다.
 				// 북 객체를 만든다
@@ -100,14 +147,8 @@ public class BookDaoTestMain {
 				break;
 			case "C": // 등록
 				System.out.println("입력 : 8994492046-9788994492049,Java의 정석 기초편,남궁성,IT,1>>");
-				readInput = scanner.nextLine().trim();
-
-				dataArr = readInput.split(",");
-
-				boolean available = false;
-				available = dataArr[4].equals("1") ? true : false;
-				book = new Book(dataArr[0], dataArr[1], dataArr[2], dataArr[3], available);
-
+				book = bookMain.getInputData(scanner);
+				
 				int statusC = bookMain.dao.doSave(book);
 				if (statusC == 1) { // 정상 등록
 					System.out.println(book.toString() + " 입력 되었습니다.");

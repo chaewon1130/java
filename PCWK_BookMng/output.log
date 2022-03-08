@@ -1,14 +1,8 @@
-2022-03-07 14:12:17,815 DEBUG [main] cmn.LoggerManager ( BookDao.java:79)     - ============================
-2022-03-07 14:12:17,819 DEBUG [main] cmn.LoggerManager ( BookDao.java:80)     - =IOException : C:\DCOM_20220127\01_JAVA\workspace\PCWK_BookMng\src\com\pcwk\data\books.csv (지정된 파일을 찾을 수 없습니다)
-2022-03-07 14:12:17,819 DEBUG [main] cmn.LoggerManager ( BookDao.java:81)     - ============================
-2022-03-07 14:12:17,819 DEBUG [main] cmn.LoggerManager ( BookDao.java:26)     - 파일 읽기 실패
-2022-03-07 14:19:41,221 DEBUG [main] cmn.LoggerManager ( BookDao.java:26)     - 파일 읽기 실패
-2022-03-07 14:20:24,017 DEBUG [main] cmn.LoggerManager ( BookDao.java:26)     - 파일 읽기 실패
-2022-03-07 14:26:36,206 DEBUG [main] cmn.LoggerManager ( BookDao.java:28)     - 파일 읽기 성공
-2022-03-07 14:32:08,986 DEBUG [main] cmn.LoggerManager ( BookDao.java:28)     - 파일 읽기 성공
-2022-03-07 14:44:14,984 DEBUG [main] cmn.LoggerManager ( BookDao.java:28)     - 파일 읽기 성공
-2022-03-07 15:09:39,543 DEBUG [main] cmn.LoggerManager ( BookDao.java:28)     - 파일 읽기 성공
-2022-03-07 15:11:37,366 DEBUG [main] cmn.LoggerManager ( BookDao.java:28)     - 파일 읽기 성공
-2022-03-07 15:29:05,089 DEBUG [main] cmn.LoggerManager ( BookDao.java:28)     - 파일 읽기 성공
-2022-03-07 15:38:06,028 DEBUG [main] cmn.LoggerManager ( BookDao.java:29)     - 파일 읽기 성공
-2022-03-07 15:42:42,713 DEBUG [main] cmn.LoggerManager ( BookDao.java:29)     - 파일 읽기 성공
+2022-03-08 14:41:00,263 DEBUG [main] cmn.LoggerManager ( BookDao.java:29)     - 파일 읽기 성공
+2022-03-08 14:41:28,075 DEBUG [main] cmn.LoggerManager ( BookDao.java:29)     - 파일 읽기 성공
+2022-03-08 14:43:15,350 DEBUG [main] cmn.LoggerManager ( BookDao.java:29)     - 파일 읽기 성공
+2022-03-08 15:06:51,785 DEBUG [main] cmn.LoggerManager ( BookDao.java:29)     - 파일 읽기 성공
+2022-03-08 15:14:57,018 DEBUG [main] cmn.LoggerManager ( BookDao.java:29)     - 파일 읽기 성공
+2022-03-08 15:16:27,139 DEBUG [main] cmn.LoggerManager ( BookDao.java:29)     - 파일 읽기 성공
+2022-03-08 15:16:56,593 DEBUG [main] cmn.LoggerManager ( BookDao.java:29)     - 파일 읽기 성공
+2022-03-08 15:17:30,746 DEBUG [main] cmn.LoggerManager ( BookDao.java:29)     - 파일 읽기 성공
