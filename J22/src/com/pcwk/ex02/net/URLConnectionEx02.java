@@ -17,8 +17,9 @@ public class URLConnectionEx02 {
 		try {
 			url = new URL(address);
 			// 버퍼(byte 스트림을 char(InputStream))
-			input = new BufferedReader(new InputStreamReader(url.openStream()));
-			fw = new FileWriter("index.html");
+			// 사이트가 euc-kr로 되어있음
+			input = new BufferedReader(new InputStreamReader(url.openStream(),"euc-kr"));
+			fw = new FileWriter("index2.html");
 			String line = "";
 
 			// index.html
