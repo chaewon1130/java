@@ -7,12 +7,23 @@ INSERT INTO sawon (
 ) VALUES (
     :v0,
     :v1,
-    sysdate,
+    SYSDATE,
     :v3
 );
 commit;
+
 -- DELETE
--- UPDATE
+DELETE FROM sawon
+WHERE empno = :v0
+;
+-- UPDATE( , 'ȫU2', 20)
+UPDATE sawon
+SET ename = :v1,
+    hiredate = SYSDATE,
+    deptno = :v3
+WHERE empno = :v0
+;
+
 -- selectOne
 SELECT empno,
     ename,
