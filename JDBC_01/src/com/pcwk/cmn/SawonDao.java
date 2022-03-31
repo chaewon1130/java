@@ -114,7 +114,59 @@ public class SawonDao implements WorkDiv<SawonVO> {
 	// DELETE
 	@Override
 	public int doDelete(SawonVO dto) {
-		return 0;
+		int flag = 0;
+		Connection conn = null; // DB연결 정보
+		PreparedStatement pstmt = null; // SQL + DATA
+		StringBuilder sb = new StringBuilder(200);
+		
+		// 1. DB연결
+		conn = connect();
+		
+		// 2. SQL작성
+		sb.append("DELETE FROM sawon \n");
+		sb.append("WHERE empno = ? \n");
+		System.out.println("Query :\n" + sb.toString());
+		System.out.println("param : " + dto.toString());
+		
+		// 3. PARAM전달
+		try {
+			conn.setAutoCommit(true); // 트랜잭션 자동 commit
+			
+			pstmt = conn.prepareStatement(sb.toString());
+			pstmt.setInt(1, dto.getEmpno());
+			// 4. SQL 실행
+			flag = pstmt.executeUpdate();
+			// 5. SQL 실행결과
+			System.out.println("flag : " + flag);
+			
+//			if(flag == 1) {
+//				conn.commit();
+//			}else {
+//				conn.rollback();
+//			}
+			
+		}catch(SQLException e) {
+//			conn.rollback();
+			System.out.println("SQLException : " + e.getMessage());
+			e.printStackTrace();
+		}finally {
+			// pstmt 자원반납
+			if(pstmt != null) {
+				try {
+					pstmt.close();
+				} catch (SQLException e) {
+				}
+			}
+			// conn 자원반납
+			if(conn != null) {
+				try {
+					conn.close();
+				} catch (SQLException e) {
+				}
+			}
+		}
+		
+		return flag;
 	}
 	
 	// SELECT
