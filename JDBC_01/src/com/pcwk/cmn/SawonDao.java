@@ -3,6 +3,7 @@ package com.pcwk.cmn;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
@@ -130,7 +131,7 @@ public class SawonDao implements WorkDiv<SawonVO> {
 		
 		// 3. PARAM전달
 		try {
-			conn.setAutoCommit(true); // 트랜잭션 자동 commit
+//			conn.setAutoCommit(true); // 트랜잭션 자동 commit
 			
 			pstmt = conn.prepareStatement(sb.toString());
 			pstmt.setInt(1, dto.getEmpno());
@@ -172,7 +173,80 @@ public class SawonDao implements WorkDiv<SawonVO> {
 	// SELECT
 	@Override
 	public SawonVO doSelectOne(SawonVO dto) {
-		return null;
+		SawonVO outVO = null; // return
+		
+		Connection conn = null; // DB연결 정보
+		PreparedStatement pstmt = null; // SQL + 데이터
+		ResultSet rs = null; // DB에서 전달된 정보 추출
+		StringBuilder sb = new StringBuilder(50);
+		
+		// 1. DB연결
+		conn = connect();
+		
+		// 2. SQL작성                                                            
+		sb.append(" SELECT empno,                                           \n");
+	    sb.append(" 	ename,                                              \n");
+	    sb.append(" 	TO_CHAR(hiredate, 'YYYY/MM/DD HH24:MI:SS') hiredate,\n");
+	    sb.append(" 	deptno		                                        \n");
+	    sb.append(" FROM sawon                                              \n");
+	    sb.append(" WHERE empno = ?                                         \n");
+	    
+	    System.out.println("query : \n" + sb.toString());
+	    System.out.println("param : " + dto.toString());
+	    
+	    // 3. param 전달
+	    try {
+	    	pstmt = conn.prepareStatement(sb.toString());
+	    	pstmt.setInt(1, dto.getEmpno());
+	    	
+	    	// 4. SQL 실행 : ResultSet
+	    	rs = pstmt.executeQuery();
+	    	
+	    	// 5. return 받은 ResultSet에서 DB에서 전달된 데이터 추출
+	    	if(rs.next()) {
+	    		outVO = new SawonVO();
+	    		outVO.setEmpno(rs.getInt("empno"));
+	    		outVO.setEname(rs.getString("ename"));
+	    		outVO.setHiredate(rs.getString("hiredate"));
+	    		outVO.setDeptno(rs.getInt("deptno"));
+	    	}
+	    	
+	    	System.out.println("outVO : " + outVO);
+	    	
+	    	
+	    }catch(SQLException e) {
+	    	System.out.println("SQLException : " + e.getMessage());
+	    	e.printStackTrace();
+	    }finally {
+	    	// rs 자원반납
+	    	if(rs != null) {
+	    		try {
+					rs.close();
+				} catch (SQLException e) {
+					
+				}
+	    	}
+	    	
+	    	// pstmt 자원반납
+	    	if(pstmt != null) {
+	    		try {
+					pstmt.close();
+				} catch (SQLException e) {
+					
+				}
+	    	}
+	    	
+	    	// conn 자원반납
+	    	if(conn != null) {
+	    		try {
+					conn.close();
+				} catch (SQLException e) {
+					
+				}
+	    	}
+	    }
+		
+		return outVO;
 	}
 
 	// UPDATE

@@ -7,7 +7,8 @@ public class SawonMain {
 	
 	public SawonMain() {
 		dao = new SawonDao();
-		sawon01 = new SawonVO(1111, "카카오", "", 20);
+		// int empno, String ename, String hiredate, int deptno
+		sawon01 = new SawonVO(9001, "카카오", "", 20);
 	}
 	
 	public void doSave() {
@@ -36,10 +37,24 @@ public class SawonMain {
 		}
 	}
 	
+	public void doSelectOne() {
+		SawonVO outVO = dao.doSelectOne(sawon01);
+		if(outVO != null) {
+			System.out.println("-----------------------");
+			System.out.println("- 조 회 성 공 -");
+			System.out.println("-----------------------");
+		}else {
+			System.out.println("-----------------------");
+			System.out.println("- 조 회 실 패 -");
+			System.out.println("-----------------------");
+		}
+	}
+	
 	public static void main(String[] args) {
 		SawonMain main = new SawonMain();
-//		main.doSave();
 		main.doDelete();
+		main.doSave();
+		main.doSelectOne();		
 	}
 
 }
