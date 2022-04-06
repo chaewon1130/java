@@ -50,11 +50,42 @@ public class SawonMain {
 		}
 	}
 	
+	public void doUpdate() {
+		sawon01.setEname("KAKAO_U");
+		sawon01.setDeptno(22);
+		
+		int flag = dao.doUpdate(sawon01);
+		if(flag == 1) {
+			System.out.println("-----------------------");
+			System.out.println("- 수 정 성 공 -");
+			System.out.println("-----------------------");
+		}else {
+			System.out.println("-----------------------");
+			System.out.println("- 수 정 실 패 -");
+			System.out.println("-----------------------");
+		}
+	}
+	
+	public void upsert() {
+		int flag = dao.upsert(sawon01);
+		if(flag == 1) {
+			System.out.println("-----------------------");
+			System.out.println("- UPSERT 성 공 -");
+			System.out.println("-----------------------");
+		}else {
+			System.out.println("-----------------------");
+			System.out.println("- UPSERT 실 패 -");
+			System.out.println("-----------------------");
+		}
+	}
+	
 	public static void main(String[] args) {
 		SawonMain main = new SawonMain();
-		main.doDelete();
-		main.doSave();
-		main.doSelectOne();		
+//		main.doDelete();
+//		main.doSave();
+//		main.doSelectOne();	
+//		main.doUpdate();
+		main.upsert();
 	}
 
 }

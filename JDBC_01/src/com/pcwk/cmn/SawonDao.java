@@ -14,6 +14,8 @@ public class SawonDao implements WorkDiv<SawonVO> {
 		connect();
 	}
 	
+	
+	
 	public Connection connect() {
 		
 		Connection connection = null; // DB연결 정보
@@ -41,6 +43,73 @@ public class SawonDao implements WorkDiv<SawonVO> {
 		}
 		
 		return connection;
+	}
+	
+	/**
+	 * 등록 / 수정
+	 * @param dto
+	 * @return 1(성공) / 0(실패)
+	 */
+	public int upsert(SawonVO dto) {
+		int flag = 0;
+		
+		Connection conn = null; // DB 연결정보
+		PreparedStatement pstmt = null; // SQL + 데이터
+		StringBuilder sb = new StringBuilder(100);
+		
+		// 1. DB연결
+		conn = connect();
+		
+		sb.append("MERGE INTO sawon ta                                    \n");
+		sb.append("USING (                                                \n");
+		sb.append("    SELECT ? AS empno,                                 \n");
+		sb.append("        ? AS ename,                                    \n");
+		sb.append("        SYSDATE AS hiredate,                           \n");
+		sb.append("        ? AS deptno                                    \n");
+		sb.append("    FROM dual                                          \n");
+		sb.append(") tb                                                   \n");
+		sb.append("ON(ta.empno = tb.empno)                                \n");
+		sb.append("WHEN MATCHED THEN                                      \n");
+		sb.append("    UPDATE SET ta.ename = tb.ename,                    \n");
+		sb.append("                ta.hiredate = tb.hiredate,             \n");
+		sb.append("                ta.deptno = tb.deptno                  \n");
+		sb.append("WHEN NOT MATCHED THEN                                  \n");
+		sb.append("    INSERT (ta.empno, ta.ename, ta.hiredate, ta.deptno)\n"); 
+		sb.append("    VALUES (tb.empno, tb.ename, tb.hiredate, tb.deptno)\n");
+		System.out.println("query : " + sb.toString());
+		System.out.println("param : " + dto.toString());
+		
+		try {
+			pstmt = conn.prepareStatement(sb.toString());
+			pstmt.setInt(1, dto.getEmpno());
+			pstmt.setString(2, dto.getEname());
+			pstmt.setInt(3, dto.getDeptno());
+			
+			// 4. SQL 실행
+			flag = pstmt.executeUpdate();
+			// 5. SQL 실행결과
+			System.out.println("flag : " + flag);
+			
+		}catch(SQLException e) {
+			System.out.println("SQLException : " + e.getMessage());
+			e.printStackTrace();
+		}finally {
+			if(conn != null) {
+				try {
+					conn.close();
+				} catch (SQLException e) {
+				}
+			}
+			if(pstmt != null) {
+				try {
+					pstmt.close();
+				} catch (SQLException e) {
+				}
+			}
+		}
+		
+		
+		return flag;
 	}
 
 	// 목록조회
@@ -252,7 +321,58 @@ public class SawonDao implements WorkDiv<SawonVO> {
 	// UPDATE
 	@Override
 	public int doUpdate(SawonVO dto) {
-		return 0;
+		int flag = 0;
+		
+		Connection conn = null; // DB연결 정보
+		PreparedStatement pstmt = null; // SQL + 데이터
+		StringBuilder sb = new StringBuilder(100);
+		
+		// 1. DB연결
+		conn = connect();
+		
+		// 2. SQL 작성
+		sb.append("UPDATE sawon               \n");
+		sb.append("   SET ename = ?,          \n");
+		sb.append("       hiredate = SYSDATE, \n");
+		sb.append("       deptno = ?          \n");
+		sb.append("WHERE empno = ?            \n");
+		
+		System.out.println("query : \n" + sb.toString());
+		System.out.println("param : " + dto.toString());
+		
+		try {
+			pstmt = conn.prepareStatement(sb.toString());
+			pstmt.setString(1, dto.getEname());
+			pstmt.setInt(2, dto.getDeptno());
+			pstmt.setInt(3, dto.getEmpno());
+			
+			// 4. SQL실행
+			flag = pstmt.executeUpdate();
+			
+			// 5. SQL 실행결과
+			System.out.println("flag : " + flag);
+			
+		}catch(SQLException e) {
+			System.out.println("SQLException : " + e.getMessage());
+			e.printStackTrace();
+		}finally {
+			// pstmt 자원반납
+			if(pstmt != null) {
+				try {
+					pstmt.close();
+				} catch (SQLException e) {
+				}
+			}
+			// conn 자원반납
+			if(conn != null) {
+				try {
+					conn.close();
+				} catch (SQLException e) {
+				}
+			}			
+		}
+		
+		return flag;
 	}
 
 }
