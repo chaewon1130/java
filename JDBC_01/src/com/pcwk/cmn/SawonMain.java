@@ -1,14 +1,19 @@
 package com.pcwk.cmn;
 
+import java.util.List;
+
 public class SawonMain {
 
 	private SawonDao dao;
 	private SawonVO sawon01;
+	private SearchVO search01;
 	
 	public SawonMain() {
 		dao = new SawonDao();
 		// int empno, String ename, String hiredate, int deptno
 		sawon01 = new SawonVO(9001, "카카오", "", 20);
+		// String searchDiv, String searchWord, int pageSize, int pageNum
+		search01 = new SearchVO("", "", 10, 1);
 	}
 	
 	public void doSave() {
@@ -79,13 +84,27 @@ public class SawonMain {
 		}
 	}
 	
+	public void doRetrieve(){
+		List<SawonVO> list = dao.doRetrieve(search01);
+		if(list.size() > 0) {
+			for(SawonVO vo : list) {
+				System.out.println("vo : " + vo);
+			}
+		}else {
+			System.out.println("-----------------------");
+			System.out.println("---- 목 록 조 회 실 패 ----");
+			System.out.println("-----------------------");
+		}
+	}
+	
 	public static void main(String[] args) {
 		SawonMain main = new SawonMain();
 //		main.doDelete();
 //		main.doSave();
 //		main.doSelectOne();	
 //		main.doUpdate();
-		main.upsert();
+//		main.upsert();
+		main.doRetrieve();
 	}
 
 }

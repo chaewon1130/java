@@ -33,3 +33,20 @@ FROM
     sawon
 WHERE empno = :v0
 ;
+
+-- PAGING
+SELECT tt1.rnum,
+    tt1.empno,
+    tt1.ename,
+    TO_CHAR(tt1.hiredate, 'YYYY/MM/DD') AS "HIREDATE",
+    tt1.deptno
+FROM(
+    SELECT ROWNUM AS rnum, t1.*
+    FROM(
+        SELECT *
+        FROM SAWON
+        ORDER BY HIREDATE DESC
+    )t1
+    WHERE ROWNUM <= (&PAGE_SIZE * (&PAGE_NUM - 1) + &PAGE_SIZE)
+)tt1
+WHERE rnum >= (&PAGE_SIZE * (&PAGE_NUM - 1) + 1)

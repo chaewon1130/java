@@ -5,6 +5,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class SawonDao implements WorkDiv<SawonVO> {
@@ -115,7 +116,92 @@ public class SawonDao implements WorkDiv<SawonVO> {
 	// 목록조회
 	@Override
 	public List<SawonVO> doRetrieve(DTO dto) {
-		return null;
+		List<SawonVO> sawonList = new ArrayList<SawonVO>();
+		SearchVO inVO = (SearchVO)dto;
+		
+		Connection conn = null; // DB 연결정보
+		PreparedStatement pstmt = null; // SQL + 데이터
+		ResultSet rs = null; // DB에서 전달된 정보 추출
+		StringBuilder sb = new StringBuilder(300);
+		
+		// 1. DB연결
+		conn = connect();
+		
+		// 2. SQL작성
+		sb.append("SELECT tt1.rnum as num,                                          \n");
+		sb.append("    tt1.empno,                                                   \n");
+		sb.append("    tt1.ename,                                                   \n");
+		sb.append("    TO_CHAR(tt1.hiredate, 'YYYY/MM/DD') AS hiredate,             \n");
+		sb.append("    tt1.deptno                                                   \n");
+		sb.append("FROM(                                                            \n");
+		sb.append("    SELECT ROWNUM AS rnum, t1.*                                  \n");
+		sb.append("    FROM(                                                        \n");
+		sb.append("        SELECT *                                                 \n");
+		sb.append("        FROM SAWON                                               \n");
+		sb.append("        ORDER BY HIREDATE DESC                                   \n");
+		sb.append("    )t1                                                          \n");
+		sb.append("    --WHERE ROWNUM <= (&PAGE_SIZE * (&PAGE_NUM - 1) + &PAGE_SIZE)\n");
+		sb.append("	WHERE ROWNUM <= 10                                              \n");
+		sb.append(")tt1                                                             \n");
+		sb.append("--WHERE rnum >= (&PAGE_SIZE * (&PAGE_NUM - 1) + 1)               \n");
+		sb.append("WHERE rnum >= 1                                                  \n");
+		
+		System.out.println("query : \n" + sb.toString());
+		System.out.println("param : " + inVO.toString());
+		
+		try {
+			pstmt = conn.prepareStatement(sb.toString());
+			
+			// TO DO : PARAM SET
+			
+			// 4. SQL실행 : ResultSet
+			rs = pstmt.executeQuery();
+			
+			// 5. return 받은 ResultSet에서 데이터 추출
+			while(rs.next()) {
+				SawonVO outVO = new SawonVO();
+				outVO.setNo(rs.getInt("num"));
+				outVO.setEmpno(rs.getInt("empno"));
+				outVO.setEname(rs.getString("ename"));
+				outVO.setHiredate(rs.getString("hiredate"));
+				outVO.setDeptno(rs.getInt("deptno"));
+				
+				sawonList.add(outVO);
+			}
+			
+		}catch(SQLException e) {
+			System.out.println("SQLException : " + e.getMessage());
+			e.printStackTrace();
+		}finally {
+			// rs 자원반납
+	    	if(rs != null) {
+	    		try {
+					rs.close();
+				} catch (SQLException e) {
+					
+				}
+	    	}
+	    	
+	    	// pstmt 자원반납
+	    	if(pstmt != null) {
+	    		try {
+					pstmt.close();
+				} catch (SQLException e) {
+					
+				}
+	    	}
+	    	
+	    	// conn 자원반납
+	    	if(conn != null) {
+	    		try {
+					conn.close();
+				} catch (SQLException e) {
+					
+				}
+	    	}
+		}
+		
+		return sawonList;
 	}
 	
 	// INSERT
