@@ -85,6 +85,10 @@ public class SawonMain {
 	}
 	
 	public void doRetrieve(){
+		search01.setPageSize(10);
+		search01.setPageNum(1);
+		search01.setSearchDiv("");
+		search01.setSearchWord("");
 		List<SawonVO> list = dao.doRetrieve(search01);
 		if(list.size() > 0) {
 			for(SawonVO vo : list) {

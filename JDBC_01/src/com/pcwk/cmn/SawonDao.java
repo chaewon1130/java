@@ -123,9 +123,28 @@ public class SawonDao implements WorkDiv<SawonVO> {
 		PreparedStatement pstmt = null; // SQL + 데이터
 		ResultSet rs = null; // DB에서 전달된 정보 추출
 		StringBuilder sb = new StringBuilder(300);
+		// 검색 조건 처리
+		StringBuilder sbWhere = new StringBuilder(100);
 		
 		// 1. DB연결
 		conn = connect();
+		
+		// 검색조건 : searchDiv(검색조건), searchWord(검색어)
+		// "" : 전체
+		// 10 : 사번
+		// 20 : 이름
+		// 30 : 부서번호
+		if(inVO != null) {
+			if(inVO.getSearchDiv().equals("30")) { //WHERE deptno LIKE 'searchWord%'
+				sbWhere.append("WHERE deptno LIKE '" + inVO.getSearchWord() + "%'");
+			}else if(inVO.getSearchDiv().equals("20")){ //WHERE ename LIKE 'searchWord%'
+				sbWhere.append("WHERE ename LIKE '" + inVO.getSearchWord() + "%'");
+			}else if(inVO.getSearchDiv().equals("10")) { //WHERE empno LIKE 'searchWord%'
+				sbWhere.append("WHERE empno LIKE '" + inVO.getSearchWord() + "%'");
+			}else if(inVO.getSearchDiv().equals("")) { // 전체
+				
+			}
+		}
 		
 		// 2. SQL작성
 		sb.append("SELECT tt1.rnum as num,                                          \n");
@@ -138,21 +157,31 @@ public class SawonDao implements WorkDiv<SawonVO> {
 		sb.append("    FROM(                                                        \n");
 		sb.append("        SELECT *                                                 \n");
 		sb.append("        FROM SAWON                                               \n");
+		// 조건절
+		sb.append(sbWhere.toString());
+		sb.append("        --조건                                                    \n");
 		sb.append("        ORDER BY HIREDATE DESC                                   \n");
 		sb.append("    )t1                                                          \n");
-		sb.append("    --WHERE ROWNUM <= (&PAGE_SIZE * (&PAGE_NUM - 1) + &PAGE_SIZE)\n");
-		sb.append("	WHERE ROWNUM <= 10                                              \n");
+//		sb.append("    --WHERE ROWNUM <= (&PAGE_SIZE * (&PAGE_NUM - 1) + &PAGE_SIZE)\n");
+		sb.append("    WHERE ROWNUM <= (? * (? - 1) + ?)							\n");
+//		sb.append("	--WHERE ROWNUM <= 10                                              \n");
 		sb.append(")tt1                                                             \n");
-		sb.append("--WHERE rnum >= (&PAGE_SIZE * (&PAGE_NUM - 1) + 1)               \n");
-		sb.append("WHERE rnum >= 1                                                  \n");
+//		sb.append("--WHERE rnum >= (&PAGE_SIZE * (&PAGE_NUM - 1) + 1)               \n");
+		sb.append("WHERE rnum >= (? * (? - 1) + 1)              					 \n");
+//		sb.append("WHERE rnum >= 1                                                  \n");
 		
 		System.out.println("query : \n" + sb.toString());
 		System.out.println("param : " + inVO.toString());
 		
 		try {
 			pstmt = conn.prepareStatement(sb.toString());
+			pstmt.setInt(1, inVO.getPageSize());
+			pstmt.setInt(2, inVO.getPageNum());
+			pstmt.setInt(3, inVO.getPageSize());
 			
-			// TO DO : PARAM SET
+			pstmt.setInt(4, inVO.getPageSize());
+			pstmt.setInt(5, inVO.getPageNum());
+			
 			
 			// 4. SQL실행 : ResultSet
 			rs = pstmt.executeQuery();
