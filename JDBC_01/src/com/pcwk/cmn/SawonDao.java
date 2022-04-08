@@ -119,6 +119,17 @@ public class SawonDao implements WorkDiv<SawonVO> {
 		List<SawonVO> sawonList = new ArrayList<SawonVO>();
 		SearchVO inVO = (SearchVO)dto;
 		
+		// =======================================
+		// JDBC연결
+		// 1. JDBC DRIVER LOADING
+		// 2. CONNECTION 생성
+		// 3. PreparedStatement 생성
+		// 4. 쿼리실행
+		// 5. 쿼리 실행 결과 처리
+		// 6. 자원 반납(CLOSE)
+		// ResultSet, PreparedStatement, Connection
+		// ========================================
+		
 		Connection conn = null; // DB 연결정보
 		PreparedStatement pstmt = null; // SQL + 데이터
 		ResultSet rs = null; // DB에서 전달된 정보 추출
