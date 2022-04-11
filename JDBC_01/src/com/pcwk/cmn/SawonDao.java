@@ -8,8 +8,10 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.log4j.Logger;
+
 public class SawonDao implements WorkDiv<SawonVO> {
-	 
+	final Logger LOG = Logger.getLogger(this.getClass());
 	
 	public SawonDao() {
 		connect();
@@ -33,13 +35,13 @@ public class SawonDao implements WorkDiv<SawonVO> {
 			
 			// DB 연결
 			connection = DriverManager.getConnection(dbURL, dbUSER, dbPASS);
-			System.out.println("connection : " + connection);
+			LOG.debug("connection : " + connection);
 			
 		} catch (ClassNotFoundException e) {
-			System.out.println("ClassNotFoundException : " + e.getMessage());
+			LOG.debug("ClassNotFoundException : " + e.getMessage());
 			e.printStackTrace();
 		} catch (SQLException e) {
-			System.out.println("SQLException : " + e.getMessage());
+			LOG.debug("SQLException : " + e.getMessage());
 			e.printStackTrace();
 		}
 		
@@ -77,8 +79,8 @@ public class SawonDao implements WorkDiv<SawonVO> {
 		sb.append("WHEN NOT MATCHED THEN                                  \n");
 		sb.append("    INSERT (ta.empno, ta.ename, ta.hiredate, ta.deptno)\n"); 
 		sb.append("    VALUES (tb.empno, tb.ename, tb.hiredate, tb.deptno)\n");
-		System.out.println("query : " + sb.toString());
-		System.out.println("param : " + dto.toString());
+		LOG.debug("query : " + sb.toString());
+		LOG.debug("param : " + dto.toString());
 		
 		try {
 			pstmt = conn.prepareStatement(sb.toString());
@@ -89,10 +91,10 @@ public class SawonDao implements WorkDiv<SawonVO> {
 			// 4. SQL 실행
 			flag = pstmt.executeUpdate();
 			// 5. SQL 실행결과
-			System.out.println("flag : " + flag);
+			LOG.debug("flag : " + flag);
 			
 		}catch(SQLException e) {
-			System.out.println("SQLException : " + e.getMessage());
+			LOG.debug("SQLException : " + e.getMessage());
 			e.printStackTrace();
 		}finally {
 			if(conn != null) {
@@ -146,14 +148,12 @@ public class SawonDao implements WorkDiv<SawonVO> {
 		// 20 : 이름
 		// 30 : 부서번호
 		if(inVO != null) {
-			if(inVO.getSearchDiv().equals("30")) { //WHERE deptno LIKE 'searchWord%'
-				sbWhere.append("WHERE deptno LIKE '" + inVO.getSearchWord() + "%'");
-			}else if(inVO.getSearchDiv().equals("20")){ //WHERE ename LIKE 'searchWord%'
-				sbWhere.append("WHERE ename LIKE '" + inVO.getSearchWord() + "%'");
-			}else if(inVO.getSearchDiv().equals("10")) { //WHERE empno LIKE 'searchWord%'
-				sbWhere.append("WHERE empno LIKE '" + inVO.getSearchWord() + "%'");
-			}else if(inVO.getSearchDiv().equals("")) { // 전체
-				
+			if(inVO.getSearchDiv().equals("30")) {
+				sbWhere.append("WHERE deptno LIKE ? || '%'");
+			}else if(inVO.getSearchDiv().equals("20")){
+				sbWhere.append("WHERE ename LIKE ? || '%'");
+			}else if(inVO.getSearchDiv().equals("10")) {
+				sbWhere.append("WHERE empno LIKE ? || '%'");
 			}
 		}
 		
@@ -181,18 +181,29 @@ public class SawonDao implements WorkDiv<SawonVO> {
 		sb.append("WHERE rnum >= (? * (? - 1) + 1)              					 \n");
 //		sb.append("WHERE rnum >= 1                                                  \n");
 		
-		System.out.println("query : \n" + sb.toString());
-		System.out.println("param : " + inVO.toString());
+		LOG.debug("query : \n" + sb.toString());
+		LOG.debug("param : " + inVO.toString());
 		
 		try {
 			pstmt = conn.prepareStatement(sb.toString());
-			pstmt.setInt(1, inVO.getPageSize());
-			pstmt.setInt(2, inVO.getPageNum());
-			pstmt.setInt(3, inVO.getPageSize());
 			
-			pstmt.setInt(4, inVO.getPageSize());
-			pstmt.setInt(5, inVO.getPageNum());
-			
+			if(inVO != null && !inVO.getSearchDiv().equals("")) { // 검색조건이 있으면
+				pstmt.setString(1, inVO.getSearchWord());
+				
+				pstmt.setInt(2, inVO.getPageSize());
+				pstmt.setInt(3, inVO.getPageNum());
+				pstmt.setInt(4, inVO.getPageSize());
+				
+				pstmt.setInt(5, inVO.getPageSize());
+				pstmt.setInt(6, inVO.getPageNum());
+			}else { // 전체(검색조건 전체)
+				pstmt.setInt(1, inVO.getPageSize());
+				pstmt.setInt(2, inVO.getPageNum());
+				pstmt.setInt(3, inVO.getPageSize());
+				
+				pstmt.setInt(4, inVO.getPageSize());
+				pstmt.setInt(5, inVO.getPageNum());
+			}
 			
 			// 4. SQL실행 : ResultSet
 			rs = pstmt.executeQuery();
@@ -210,7 +221,7 @@ public class SawonDao implements WorkDiv<SawonVO> {
 			}
 			
 		}catch(SQLException e) {
-			System.out.println("SQLException : " + e.getMessage());
+			LOG.debug("SQLException : " + e.getMessage());
 			e.printStackTrace();
 		}finally {
 			// rs 자원반납
@@ -269,8 +280,8 @@ public class SawonDao implements WorkDiv<SawonVO> {
 		sb.append("     ?                \n");
 		sb.append(" )                    \n");
 		
-		System.out.println(sb.toString());
-		System.out.println("param : " + dto.toString());
+		LOG.debug(sb.toString());
+		LOG.debug("param : " + dto.toString());
 		
 		// 3. param 전달
 		try {
@@ -283,9 +294,9 @@ public class SawonDao implements WorkDiv<SawonVO> {
 			flag = pstmt.executeUpdate();
 			
 			// 5. SQL 실행결과
-			System.out.println("flag : " + flag);
+			LOG.debug("flag : " + flag);
 		} catch (SQLException e) {
-			System.out.println("SQLException : " + e.getMessage());
+			LOG.debug("SQLException : " + e.getMessage());
 			e.printStackTrace();
 		// 6. 자원반납
 		} finally {
@@ -321,8 +332,8 @@ public class SawonDao implements WorkDiv<SawonVO> {
 		// 2. SQL작성
 		sb.append("DELETE FROM sawon \n");
 		sb.append("WHERE empno = ? \n");
-		System.out.println("Query :\n" + sb.toString());
-		System.out.println("param : " + dto.toString());
+		LOG.debug("Query :\n" + sb.toString());
+		LOG.debug("param : " + dto.toString());
 		
 		// 3. PARAM전달
 		try {
@@ -333,7 +344,7 @@ public class SawonDao implements WorkDiv<SawonVO> {
 			// 4. SQL 실행
 			flag = pstmt.executeUpdate();
 			// 5. SQL 실행결과
-			System.out.println("flag : " + flag);
+			LOG.debug("flag : " + flag);
 			
 //			if(flag == 1) {
 //				conn.commit();
@@ -343,7 +354,7 @@ public class SawonDao implements WorkDiv<SawonVO> {
 			
 		}catch(SQLException e) {
 //			conn.rollback();
-			System.out.println("SQLException : " + e.getMessage());
+			LOG.debug("SQLException : " + e.getMessage());
 			e.printStackTrace();
 		}finally {
 			// pstmt 자원반납
@@ -386,8 +397,8 @@ public class SawonDao implements WorkDiv<SawonVO> {
 	    sb.append(" FROM sawon                                              \n");
 	    sb.append(" WHERE empno = ?                                         \n");
 	    
-	    System.out.println("query : \n" + sb.toString());
-	    System.out.println("param : " + dto.toString());
+	    LOG.debug("query : \n" + sb.toString());
+	    LOG.debug("param : " + dto.toString());
 	    
 	    // 3. param 전달
 	    try {
@@ -406,11 +417,11 @@ public class SawonDao implements WorkDiv<SawonVO> {
 	    		outVO.setDeptno(rs.getInt("deptno"));
 	    	}
 	    	
-	    	System.out.println("outVO : " + outVO);
+	    	LOG.debug("outVO : " + outVO);
 	    	
 	    	
 	    }catch(SQLException e) {
-	    	System.out.println("SQLException : " + e.getMessage());
+	    	LOG.debug("SQLException : " + e.getMessage());
 	    	e.printStackTrace();
 	    }finally {
 	    	// rs 자원반납
@@ -463,8 +474,8 @@ public class SawonDao implements WorkDiv<SawonVO> {
 		sb.append("       deptno = ?          \n");
 		sb.append("WHERE empno = ?            \n");
 		
-		System.out.println("query : \n" + sb.toString());
-		System.out.println("param : " + dto.toString());
+		LOG.debug("query : \n" + sb.toString());
+		LOG.debug("param : " + dto.toString());
 		
 		try {
 			pstmt = conn.prepareStatement(sb.toString());
@@ -476,10 +487,10 @@ public class SawonDao implements WorkDiv<SawonVO> {
 			flag = pstmt.executeUpdate();
 			
 			// 5. SQL 실행결과
-			System.out.println("flag : " + flag);
+			LOG.debug("flag : " + flag);
 			
 		}catch(SQLException e) {
-			System.out.println("SQLException : " + e.getMessage());
+			LOG.debug("SQLException : " + e.getMessage());
 			e.printStackTrace();
 		}finally {
 			// pstmt 자원반납
