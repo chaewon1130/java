@@ -89,8 +89,8 @@ public class SawonMain {
 	public void doRetrieve(){
 		search01.setPageSize(10);
 		search01.setPageNum(1);
-		search01.setSearchDiv("20");
-		search01.setSearchWord("pcwk8");
+		search01.setSearchDiv("30");
+		search01.setSearchWord("10");
 		List<SawonVO> list = dao.doRetrieve(search01);
 		if(list.size() > 0) {
 			for(SawonVO vo : list) {
@@ -103,6 +103,19 @@ public class SawonMain {
 		}
 	}
 	
+	public void totalCount() {
+		int totalCnt = dao.totalCount(search01);
+		if(totalCnt > 0) {
+			LOG.debug("-----------------------");
+			LOG.debug("---- 총 글수(성공) : " + totalCnt);
+			LOG.debug("-----------------------");			
+		}else {
+			LOG.debug("-----------------------");
+			LOG.debug("---- 총 글수 : " + totalCnt);
+			LOG.debug("-----------------------");	
+		}
+	}
+	
 	public static void main(String[] args) {
 		SawonMain main = new SawonMain();
 		main.doDelete();
@@ -111,6 +124,7 @@ public class SawonMain {
 //		main.doUpdate();
 //		main.upsert();
 		main.doRetrieve();
+		main.totalCount();
 	}
 
 }

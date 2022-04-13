@@ -13,40 +13,98 @@ import org.apache.log4j.Logger;
 public class SawonDao implements WorkDiv<SawonVO> {
 	final Logger LOG = Logger.getLogger(this.getClass());
 	
+	private PConnection pConnection;
 	public SawonDao() {
-		connect();
+		pConnection = new PConnection();
 	}
 	
-	
-	
-	public Connection connect() {
+	/**
+	 * 총 개수
+	 * @param dto
+	 * @return
+	 */
+	public int totalCount(DTO dto) {
+		int totalCnt = 0;
+		SearchVO inVO = (SearchVO) dto;
 		
-		Connection connection = null; // DB연결 정보
+		// =======================================
+		// JDBC연결
+		// 1. JDBC DRIVER LOADING
+		// 2. CONNECTION 생성
+		// 3. PreparedStatement 생성
+		// 4. 쿼리실행
+		// 5. 쿼리 실행 결과 처리
+		// 6. 자원 반납(CLOSE)
+		// ResultSet, PreparedStatement, Connection
+		// ========================================
 		
-		// jdbc:oracle:thin:@IP:PORT:전역DB명칭
-		String dbURL = "jdbc:oracle:thin:@localhost:1521:xe"; // URL
-		String dbUSER = "scott"; // ID
-		String dbPASS = "pcwk"; // PW
+		Connection conn = null; // DB연결 정보
+		PreparedStatement pstmt = null; // SQL + 데이터
+		ResultSet rs = null; // DB에서 전달된 정보 추출
+		StringBuilder sb = new StringBuilder(50);
 		
+		// 검색조건 처리
+		StringBuilder sbWhere  = new StringBuilder(50);
 		
-		try {
-			// jdbc oracle driver load
-			Class.forName("oracle.jdbc.driver.OracleDriver");
-			
-			// DB 연결
-			connection = DriverManager.getConnection(dbURL, dbUSER, dbPASS);
-			LOG.debug("connection : " + connection);
-			
-		} catch (ClassNotFoundException e) {
-			LOG.debug("ClassNotFoundException : " + e.getMessage());
-			e.printStackTrace();
-		} catch (SQLException e) {
-			LOG.debug("SQLException : " + e.getMessage());
-			e.printStackTrace();
+		// 1. DB연결
+		conn = pConnection.connect();
+		
+		// 검색조건 : searchDiv(검색조건), searchWord(검색어)
+		// "" : 전체
+		// 10 : 사번
+		// 20 : 이름
+		// 30 : 부서번호
+		if(inVO != null) {
+			if(inVO.getSearchDiv().equals("30")) {
+				sbWhere.append("WHERE deptno LIKE ? || '%'");
+			}else if(inVO.getSearchDiv().equals("20")){
+				sbWhere.append("WHERE ename LIKE ? || '%'");
+			}else if(inVO.getSearchDiv().equals("10")) {
+				sbWhere.append("WHERE empno LIKE ? || '%'");
+			}
 		}
 		
-		return connection;
+		// 2. SQL 작성
+		sb.append(" SELECT COUNT(*) totalCnt \n");
+		sb.append(" FROM SAWON               \n");
+		// 조건절
+		sb.append(sbWhere.toString());
+		
+		LOG.debug("query : \n " + sb.toString());
+		LOG.debug("param : " + inVO.toString());
+		
+		try {
+			pstmt = conn.prepareStatement(sb.toString());
+			
+			if(inVO != null && !inVO.getSearchDiv().equals("")) {
+				pstmt.setString(1, inVO.getSearchWord());
+			}
+			
+			// 4. SQL실행
+			rs = pstmt.executeQuery();
+			if(rs.next()) {
+				totalCnt = rs.getInt("totalCnt");
+			}
+			
+			LOG.debug("totalCnt : " + totalCnt);
+			
+		}catch(SQLException e) {
+			LOG.debug("SQLException : " + e.getMessage());
+			e.printStackTrace();
+		}finally {
+			// rs 자원반납
+	    	JDBCUtil.close(rs);
+	    	
+	    	// pstmt 자원반납
+	    	JDBCUtil.close(pstmt);
+	    	
+	    	// conn 자원반납
+	    	JDBCUtil.close(conn);			
+		}
+		
+		return totalCnt;
 	}
+	
 	
 	/**
 	 * 등록 / 수정
@@ -61,7 +119,7 @@ public class SawonDao implements WorkDiv<SawonVO> {
 		StringBuilder sb = new StringBuilder(100);
 		
 		// 1. DB연결
-		conn = connect();
+		conn = pConnection.connect();
 		
 		sb.append("MERGE INTO sawon ta                                    \n");
 		sb.append("USING (                                                \n");
@@ -97,18 +155,8 @@ public class SawonDao implements WorkDiv<SawonVO> {
 			LOG.debug("SQLException : " + e.getMessage());
 			e.printStackTrace();
 		}finally {
-			if(conn != null) {
-				try {
-					conn.close();
-				} catch (SQLException e) {
-				}
-			}
-			if(pstmt != null) {
-				try {
-					pstmt.close();
-				} catch (SQLException e) {
-				}
-			}
+			JDBCUtil.close(conn);
+			JDBCUtil.close(pstmt);
 		}
 		
 		
@@ -140,7 +188,7 @@ public class SawonDao implements WorkDiv<SawonVO> {
 		StringBuilder sbWhere = new StringBuilder(100);
 		
 		// 1. DB연결
-		conn = connect();
+		conn = pConnection.connect();
 		
 		// 검색조건 : searchDiv(검색조건), searchWord(검색어)
 		// "" : 전체
@@ -217,6 +265,7 @@ public class SawonDao implements WorkDiv<SawonVO> {
 				outVO.setHiredate(rs.getString("hiredate"));
 				outVO.setDeptno(rs.getInt("deptno"));
 				
+				
 				sawonList.add(outVO);
 			}
 			
@@ -225,31 +274,13 @@ public class SawonDao implements WorkDiv<SawonVO> {
 			e.printStackTrace();
 		}finally {
 			// rs 자원반납
-	    	if(rs != null) {
-	    		try {
-					rs.close();
-				} catch (SQLException e) {
-					
-				}
-	    	}
+	    	JDBCUtil.close(rs);
 	    	
 	    	// pstmt 자원반납
-	    	if(pstmt != null) {
-	    		try {
-					pstmt.close();
-				} catch (SQLException e) {
-					
-				}
-	    	}
+	    	JDBCUtil.close(pstmt);
 	    	
 	    	// conn 자원반납
-	    	if(conn != null) {
-	    		try {
-					conn.close();
-				} catch (SQLException e) {
-					
-				}
-	    	}
+	    	JDBCUtil.close(conn);
 		}
 		
 		return sawonList;
@@ -264,7 +295,7 @@ public class SawonDao implements WorkDiv<SawonVO> {
 		StringBuilder sb = new StringBuilder(200);
 		
 		// 1. DB 연결
-		conn = connect();
+		conn = pConnection.connect();
 		
 		// 2. SQL 작성
 		// \n은 그냥 쿼리 보이게하기위해 넣은거임
@@ -301,19 +332,10 @@ public class SawonDao implements WorkDiv<SawonVO> {
 		// 6. 자원반납
 		} finally {
 			// pstmt 자원반납
-			if(pstmt != null) {
-				try {
-					pstmt.close();
-				} catch (SQLException e) {
-				}
-			}
+			JDBCUtil.close(pstmt);
+			
 			// conn 자원반납
-			if(conn != null) {
-				try {
-					conn.close();
-				} catch (SQLException e) {
-				}
-			}
+			JDBCUtil.close(conn);
 		}
 		return flag;
 	}
@@ -327,7 +349,7 @@ public class SawonDao implements WorkDiv<SawonVO> {
 		StringBuilder sb = new StringBuilder(200);
 		
 		// 1. DB연결
-		conn = connect();
+		conn = pConnection.connect();
 		
 		// 2. SQL작성
 		sb.append("DELETE FROM sawon \n");
@@ -358,19 +380,9 @@ public class SawonDao implements WorkDiv<SawonVO> {
 			e.printStackTrace();
 		}finally {
 			// pstmt 자원반납
-			if(pstmt != null) {
-				try {
-					pstmt.close();
-				} catch (SQLException e) {
-				}
-			}
+			JDBCUtil.close(pstmt);
 			// conn 자원반납
-			if(conn != null) {
-				try {
-					conn.close();
-				} catch (SQLException e) {
-				}
-			}
+			JDBCUtil.close(conn);
 		}
 		
 		return flag;
@@ -387,7 +399,7 @@ public class SawonDao implements WorkDiv<SawonVO> {
 		StringBuilder sb = new StringBuilder(50);
 		
 		// 1. DB연결
-		conn = connect();
+		conn = pConnection.connect();
 		
 		// 2. SQL작성                                                            
 		sb.append(" SELECT empno,                                           \n");
@@ -425,31 +437,13 @@ public class SawonDao implements WorkDiv<SawonVO> {
 	    	e.printStackTrace();
 	    }finally {
 	    	// rs 자원반납
-	    	if(rs != null) {
-	    		try {
-					rs.close();
-				} catch (SQLException e) {
-					
-				}
-	    	}
+	    	JDBCUtil.close(rs);
 	    	
 	    	// pstmt 자원반납
-	    	if(pstmt != null) {
-	    		try {
-					pstmt.close();
-				} catch (SQLException e) {
-					
-				}
-	    	}
+	    	JDBCUtil.close(pstmt);
 	    	
 	    	// conn 자원반납
-	    	if(conn != null) {
-	    		try {
-					conn.close();
-				} catch (SQLException e) {
-					
-				}
-	    	}
+	    	JDBCUtil.close(conn);
 	    }
 		
 		return outVO;
@@ -465,7 +459,7 @@ public class SawonDao implements WorkDiv<SawonVO> {
 		StringBuilder sb = new StringBuilder(100);
 		
 		// 1. DB연결
-		conn = connect();
+		conn = pConnection.connect();
 		
 		// 2. SQL 작성
 		sb.append("UPDATE sawon               \n");
@@ -494,19 +488,9 @@ public class SawonDao implements WorkDiv<SawonVO> {
 			e.printStackTrace();
 		}finally {
 			// pstmt 자원반납
-			if(pstmt != null) {
-				try {
-					pstmt.close();
-				} catch (SQLException e) {
-				}
-			}
+			JDBCUtil.close(pstmt);
 			// conn 자원반납
-			if(conn != null) {
-				try {
-					conn.close();
-				} catch (SQLException e) {
-				}
-			}			
+			JDBCUtil.close(conn);
 		}
 		
 		return flag;
